@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <item  android:state_enabled="false">  
+        <color android:color="@color/main_sun_menu_sheng_bg"/>  
+    </item>
+    <item 
+         android:state_focused="false" android:state_enabled="true" android:state_pressed="false">  
+        <color android:color="@color/main_sun_menu_qian_bg"/>  
+    </item>
+    -->
+
+    <!-- disabled state -->
+    <item android:drawable="@color/main_sun_menu_sheng_bg" android:state_enabled="false"/>
+
+    <!-- enabled and pressed state -->
+
+    <item android:drawable="@color/main_sun_menu_sheng_bg" android:state_enabled="true" android:state_pressed="true"/>
+
+    <!-- enabled and focused state -->
+
+    <item android:drawable="@color/main_sun_menu_sheng_bg" android:state_enabled="true" android:state_focused="true"/>
+
+    <!-- enabled state -->
+
+    <item android:drawable="@color/main_sun_menu_qian_bg" android:state_enabled="true"/>
+
+</selector>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <color name="main_sun_menu_bg">#2D2D2D</color>
+    <color name="main_sun_menu_text_color">#63AAA7</color>
+    
+    <color name="main_sun_menu_sheng_bg">#394147</color>
+    <color name="main_sun_menu_qian_bg">#ffffff</color>
+    
+    <!-- project -->
+    <color name="project_list_bg_color">#e5e5e5</color>
+    <color name="project_list_item_status_color">#787878</color>
+    <color name="project_list_item_fininace_color">#575757</color>
+    <color name="project_list_item_redirect_color">#949494</color>
+    <color name="project_list_conditiondialog_title_color">#3c3c3c</color>
+    <color name="project_list_conditiondialog_subtitle_color">#6b6b6b</color>
+    <color name="project_search_falg_bg_color">#f4f4fe</color>
+    <color name="project_search_promote_color">#646464</color>
+    <color name="project_search_distoryfalg_text_bg_color">#b9b9b9</color>
+    <color name="project_search_falg_text_bg_color">#32b16c</color>
+    
+    <color name="halfwhite_color">#e0ffffff</color>
+	<color name="background_color">#fff1f1f1</color>
+	<color name="hongbao_money_color">#ffeaa2</color>
+	<color name="hui_hongbao_money_color">#cccccc</color>
+	<color name="home_hotel_press">#ffe85b15</color>
+	<color name="home_hotel_def">#fff06f2d</color>
+	<color name="home_groupon_def">#ff00b3a6</color>
+	<color name="home_groupon_press">#ff00a69b</color>
+	<color name="home_nearby_hotel_def">#ff4eb446</color>
+	<color name="home_nearby_hotel_press">#ff40a339</color>
+	<color name="home_sale_price_def">#fff9961b</color>
+	<color name="center_line">#ffbebebe</color>
+	<color name="home_sale_price_press">#ffed8302</color>
+	<color name="home_button_check">#ff313133</color>
+	<color name="home_button_uncheck">#ff414142</color>
+	<color name="home_center_bg_def">#ffffffff</color>
+	<color name="flight_list_bottom_press">#ffebebeb</color>
+	<color name="home_center_bg_press">#ffebebeb</color>
+	<color name="home_order_bg_press">#3fffffff</color>
+	<color name="item_serch_background">#3C3C3C</color>
+	<color name="item_search_bg_def">#FFFFFF</color>
+	<color name="common_button_color">#fffc982c</color>
+    <color name="button_text">#ffffffff</color>
+    <color name="common_white">#ffffffff</color>
+    <color name="common_hint_grey">#9d9d9d</color>
+    <color name="common_black">#ff333333</color>
+    <color name="common_desc_grey">#616161</color>
+    <color name="common_collection_grey">#bababa</color>
+    <color name="common_position_grey">#bababa</color>
+    <color name="black">#ff000000</color>
+    <color name="light_black">#ff666666</color>
+    <color name="bottom_black">#ff3C3C3C</color>
+    <color name="common_hoar">#ffebebeb</color>
+    <color name="common_gray">#ff7f7f7f</color>
+    <color name="common_dark_gray">#ff999999</color>
+    <color name="common_brown">#ff623424</color>
+    <color name="common_red">#ffff0000</color>
+    <color name="bottombar_orange">#ffE45221</color>
+     <color name="gray">#ff757173</color>
+    <color name="common_orange">#ffff6d0c</color>
+    <color name="common_dark_orange">#ffff9900</color>
+    <color name="common_blue">#cae5ff</color>
+    <color name="mycollectred">#ffD24624</color>
+    <color name="common_headbuttom_textcolor">#ffD24624</color>
+    <color name="tab_blue">#2377E8</color>
+    <color name="sea_blue">#ff0066cc</color>
+    <color name="sea_red">#ffe65749</color>
+    <color name="tab_select_col">#ff8a3128</color>
+    <color name="tab_select_order">#ff41555d</color>
+    <color name="orderlist_blue">#2377E8</color>
+    <color name="orderlist_blue_press">#442377E8</color>
+    <color name="dark_blue">#ff33b5e5</color>
+    <color name="dark_red">#ffD24624</color>
+    <color name="common_yellow">#ffffcc00</color>
+    <color name="common_yellow_light">#fffe9319</color>
+    <color name="price">#ffFE4B20</color>
+     <color name="bg_corners_pressed_a">#d8d8d8</color>
+    <color name="highlight">#ffff7f00</color>
+    <color name="comment_title_bg">#d0e8fe</color>
+     <color name="bg_corners_border">#bababa</color>
+    <color name="bg_corners_pressed_yellow">#FFEFD8</color>
+    <color name="radius_text">#ff215fe6</color>
+    <color name="separate_line">#af9f9f9f</color>
+    <color name="listitem_dark_bg">#ffcdd1d4</color>
+    <color name="listitem_light_bg">#ffffffff</color>
+    <color name="linktext">#ff2362ad</color>
+    <color name="train_detail_bg">#ffE7E7E7</color>
+    <color name="transparent">#00000000</color>
+    <color name="common_transparent">#77000000</color>
+    <color name="common_flatbg">#77FFB40D</color>
+    <color name="dialog_button_text">#ff108bc9</color>
+    <color name="common_green">#ff00a040</color>
+    <color name="common_waterblue">#ff0099cc</color>
+    <!--  <color name="gray_white">#fff8f8f8</color>-->
+     <color name="gray_white">#eeeeee</color>
+    <color name="flight_list_bg">#fefefe</color>
+    <color name="flight_list_pressed">#ffe7e7e7</color>
+    <color name="flight_list_block_pressed">#ff33b5e5</color>
+    <color name="title_back_pressed">#1Effffff</color>
+    <color name="dynamiccode_back_pressed">#CC33b5e5</color>
+    <color name="back_pressed">#ffc3c3c3</color>
+    <color name="center_bg_def">#ff9b3228</color>
+    <color name="longcui_green">#ff009966</color>
+    <color name="hotel_order_listitem_normal">#ffe4e4e4</color>
+    <color name="hotel_detail_pop_gray_light">#ffa6a6a6</color>
+    <color name="hotellist_tabbgcolor">#3C3C3C</color>
+    <!-- global order hint-->
+    <color name="global_hotel_orders_name_tips">#ff999999</color>
+    <!-- 分割线颜色 -->
+    <color name="common_split_line">#ffcccccc</color>
+	<!-- 内容背景色 -->
+	<color name="color_content_bg">#fff1f1f1</color>
+	<!-- 半透明色 -->
+	<color name="color_half_transparent">#88000000</color>
+	<color name="toast_half_transparent">#BB000000</color>
+	<!-- 说明的颜色 -->
+	<color name="color_toast">#ff008800</color>
+	<!-- 道道的那种绿色 -->
+	<color name="color_daodao">#ff509236</color>
+	<!--  listview下拉刷新增加color -->
+	<color name="white">#ffffff</color>
+	<color name="order_grey">#fff4f4f4</color>
+	<color name="light_black_myelong">#ff404040</color>
+    <color name="gold">#b89766</color>
+    <!-- 底部工具栏颜色 -->
+    <color name="light_grey">#3c3c3c</color>
+    <color name="queren_color">#20a220</color>
+    
+    <!-- 酒店订单状态颜色 -->
+     <color name="color_cancel_state">#149d34</color>
+    <color name="color_confirm_state">#149d34</color>
+    <color name="color_confirm_text">#ffd34928</color>
+    
+    <!-- 旅行清单相关 -->
+    <color name="category_bg">#fffd6b61</color>
+    <color name="category_new_bg">#ff4c4c4c</color>
+    
+    <!-- 旅行清单测试新增 -->
+     <color name="red">#fffe5859</color>
+     <color name="orange">#fffb8b70</color>
+     <color name="green">#ff6a8b5e</color>
+     <color name="blue">#ff84cef2</color>
+     <color name="gray_packing">#ffbb86c8</color>
+     <color name="packing_group_view_text_all">#ff999999</color>
+     <color name="packing_group_view_text_complete">#fffe5858</color>
+     <color name="journey_color_type_text">#ff343434</color>
+     <color name="new_item_text_color">#ff2377E8</color>
+     
+     <!-- 打车新增 -->
+      <color name="taxi_yellow">#fc982c</color>
+      
+     <color name="packing_background">#F7F7F7</color>
+     <color name="packing_text_color">#FF000000</color>
+     <color name="packing_text_color_gray">#FFc1c1c1</color>
+     <color name="circle_gray">#CCCCCC</color>
+     <color name="circle_color">#000000</color>
+     <color name="ring_color">#fc982c</color>
+     <color name="taxi_succ_color">#4da2fc</color>
+     <color name="taxi_notice_text">#9f9f9f</color>
+     <color name="taxi_title_bg">#f5f5f5</color>
+     <color name="taxi_home_jieji_bg">#ffb300</color>
+     <color name="car_home_jieji_bg">#d7eab2</color>
+     <color name="common_half_transparent">#00000000</color>
+     <color name="common_content">#fff1f1f1</color>
+     <color name="button_unpressed">#ff33b5e5</color>
+     <color name="button_pressed">#ff0099cc</color>
+     <color name="title_bg">#ff0066cc</color>
+     <color name="taxi_order_detail">#ff757173</color>
+     <color name="taxi_check_phone_bg">#007aff</color>
+     <color name="taxi_order_done_color">#ff479f0c</color>
+     
+     <color name="color_album_description">#666666</color>
+     <color name="color_text_register">#999999</color>
+     
+     <color name="hotelorder_blue">#2e7eea</color>
+    	<!-- 解决图片找不到的crash新增 -->
+     <color name="dot_red_solid">#ffc50000</color>
+     <color name="dot_red_stroke">#ffcfcfcf</color>
+     <color name="flight_search_tab_bg_solid">#ffffffff</color>
+     <color name="flight_search_tab_bg_stroke">#ff0066cc</color>
+
+     <!-- 团购搜索按钮背景颜色 -->
+     <color name="et_background_color">#ffececec</color>
+
+     
+     <!-- train -->
+     <color name="railway_gray">#757575</color>
+     <color name="railway_text_black">#ff404040</color>
+     <color name="railway_line">#bebebe</color>
+     <color name="railway_text_gray">#ff999999</color>
+     <color name="railway_text_gray_light">#ffbebebe</color>
+     <color name="railway_bg_gray">#757575</color>
+     <color name="railway_text_price_red">#ffe54030</color>
+     <color name="railway_filter_red">#e65749</color>
+     <color name="railway_bt_bg">#fff6f6f6</color>
+     <color name="train_list_selected">#00ff00</color>
+     <color name="railway_line_pre">#66ff0000</color>
+     <color name="railway_emergency_bg">#f5bcb6</color>
+     
+
+     <!-- 酒店详情页龙翠 手机专享 今日特价 等图标的背景颜色 -->
+     <color name="hotel_detail_color_tejia">#ea786c</color>
+     <color name="hotel_detail_color_longcui">#85c29d</color>
+     <color name="hotel_detail_color_zhuanxiang">#fc9b33</color>
+     <color name="hotel_detail_color_li">#70aee2</color>
+     <color name="hotel_detail_color_roomname_not_manfang">#404040</color>
+     <color name="hotel_detail_color_roombed_not_manfang">#757575</color>
+     <color name="hotel_detail_color_money">#e65749</color>
+     <!-- 账户明细Tab切换列表选中颜色 -->
+     <color name="myelong_tablist_pressed">#eeeeee</color>
+     <color name="myelong_list_item_income">#59963e</color>
+     <color name="myelong_list_item_expenses">#e65749</color>
+     
+     <!-- 机票填写界面 -->
+     <color name="flight_order_color">#404040</color>
+	 <color name="flight_order_gray_color">#757575</color>
+	 
+	
+	<color name="transparent_red">#ff00a040</color>  
+
+</resources>

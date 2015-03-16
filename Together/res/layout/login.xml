@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    tools:context=".MainActivity" 
+    android:orientation="vertical">
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:background="@drawable/back_bg"
+            android:id="@+id/login_back_id"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"/>
+    </LinearLayout>
+    
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+        
+              <EditText
+                  android:id="@+id/login_phone_edit_id"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dp"
+                  android:inputType="number"
+                  android:singleLine="true"
+                  android:maxLength="11"
+                  android:paddingLeft="10dp"
+                  android:hint="手机号"
+                  android:drawableLeft="@drawable/login_phone_edit_finished_not"
+                  android:textColorHint="@color/gray_white"
+                  android:textColor="@color/white"
+                  android:textSize="@dimen/common_nomal_large_text"
+                  android:background="@drawable/edittext_blueline"
+                  android:gravity="center_vertical"/>
+              
+              
+              <RelativeLayout 
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+                <EditText
+	                android:id="@+id/login_passwrod_edit_id"
+	                android:layout_width="fill_parent"
+	                android:layout_height="50dp"
+	               	android:paddingLeft="10dp"
+	                android:background="@drawable/edittext_blueline"
+	                android:drawableLeft="@drawable/login_password_edit_finished"
+	                android:hint="密码(6-12位)"
+	                android:imeOptions="actionDone"
+	                android:inputType="textPassword"
+	                android:textColorHint="@color/gray_white"
+	                android:paddingRight="34dp"
+	                android:textColor="@color/white"/>
+                
+                 <ImageView
+                    android:id="@+id/login_passwrod_edit_icea_id"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/login_icea_show"
+                    android:visibility="gone" /> 
+                
+            </RelativeLayout>
+                
+          <!-- <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/test_edit"
+                android:drawableLeft="@drawable/login_password_edit_finished"
+                android:hint="测试"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColorHint="@color/gray_white"
+                android:paddingRight="34dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/login_icea_show"/>  --> 
+    </LinearLayout>
+
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+          <Button 
+              android:id="@+id/loginpage_user_id"
+              android:layout_width="240dp"
+              android:layout_height="60dp"
+              android:background="@drawable/loginpage_btn_bg"
+              android:text="登  陆"
+              android:gravity="center"
+              android:textSize="20sp"
+              android:textColor="@color/white"/>
+      </LinearLayout>
+      
+</LinearLayout>

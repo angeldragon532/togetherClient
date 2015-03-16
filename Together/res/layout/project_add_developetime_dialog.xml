@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/gray_white">
+    
+      <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/black">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发展阶段"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/project_add_dialog_commit_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="完成"
+            android:clickable="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    
+         <RadioGroup 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="center"
+             android:id="@+id/radiogroup_1_id"
+             android:paddingTop="20dp"
+             android:paddingBottom="20dp">
+             
+             <RadioButton android:id="@+id/orderBy1"
+		        android:text="天使期"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		      
+		       <RadioButton android:id="@+id/orderBy2"
+		        android:text="早期"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+		       
+		        <RadioButton android:id="@+id/orderBy3"
+		        android:text="成长期"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content" />
+		      
+		       <RadioButton android:id="@+id/orderBy4"
+		        android:text="成熟期"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"/>
+         </RadioGroup>
+         
+          <!-- 
+           android:layout_marginLeft="-100dip"
+                android:layout_marginTop="40dip"
+          <RadioGroup 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:id="@+id/radiogroup_2_id"> </RadioGroup>
+             -->
+        
+</LinearLayout>
+    

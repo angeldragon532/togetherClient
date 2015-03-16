@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆形边框 -->
+    <declare-styleable name="roundedimageview">
+        <attr name="border_outside_color" format="reference|color"/>
+        <attr name="border_inside_color" format="reference|color"/>
+        <attr name="border_thickness" format="dimension"/>
+    </declare-styleable>
+    
+</resources>

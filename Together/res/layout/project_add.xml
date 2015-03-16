@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:gravity="center_vertical" >
+
+        <TextView
+            style="@style/common_text_title_black"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:text="返回"
+            android:textColor="@color/white"
+            android:textSize="18sp" 
+            android:id="@+id/project_add_back_id"/>
+
+        <TextView
+            style="@style/common_text_title_black"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="18sp" 
+            android:text="创业项目" />
+
+        <TextView
+            android:id="@+id/project_add_commit_id"
+            style="@style/common_text_title_black"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:textSize="18sp" 
+            android:textColor="@color/white"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <EditText
+                     android:id="@+id/project_add_name_id"
+                    style="@style/user_info_init_value"
+                    android:layout_width="fill_parent"
+                    android:background="@drawable/login_input_bg"
+                    android:hint="请输入项目名称"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:textColorHint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/project_add_city" />
+
+                <TextView
+                    android:id="@+id/project_add_city_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/project_add_city_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/project_add_select_redirect" />
+
+                <TextView
+                    android:id="@+id/project_add_select_redirect_id"
+                    style="@style/user_info_init_value"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:text="@string/project_add_select_redirect_1" />
+            </LinearLayout>
+            
+             <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/user_info_init_text"
+                        android:layout_weight="1"
+                        android:text="@string/project_add_fininace_status" />
+
+                    <TextView
+                        android:id="@+id/project_add_fininace_status_id"
+                        style="@style/user_info_init_value"
+                        android:text="@string/project_add_fininace_status_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/user_info_init_text"
+                        android:layout_weight="1"
+                        android:text="@string/project_add_run_status"/>
+
+                    <TextView
+                        android:id="@+id/project_add_run_status_id"
+                        style="@style/user_info_init_value"
+                        android:text="@string/project_add_run_status_1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/user_info_init_text"
+                        android:layout_weight="1"
+                        android:text="@string/project_add_develop_time" />
+
+                    <TextView
+                        android:id="@+id/project_add_developer_time_id"
+                        style="@style/user_info_init_value"
+                        android:text="@string/project_add_develop_time_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_divider" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+
+                    <TextView
+                        style="@style/user_info_init_text"
+                        android:layout_weight="1"
+                        android:text="@string/project_add_need_pataner" />
+
+                    <TextView
+                        android:id="@+id/project_add_need_pataner_id"
+                        style="@style/user_info_init_value"
+                        android:text="@string/project_add_need_pataner_1" />
+                </LinearLayout>
+                
+                <!-- 合伙人详情信息 -->
+                 <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/project_add_pataner_list_id"
+                    android:padding="10dp" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/project_add_partner_rolename_id"
+                        style="@style/user_info_init_text"
+                        android:text="技术合伙人"
+                        android:layout_margin="10dp"/>
+
+                    <TextView
+                        android:id="@+id/project_add_partner_work_id"
+                        style="@style/user_info_init_value"
+                        android:text="全职"
+                        android:layout_margin="10dp" />
+                    
+                    <TextView
+                        android:id="@+id/project_add_partner_opion_id"
+                        style="@style/user_info_init_value"
+                        android:text="股票期权 1%" 
+                        android:layout_margin="10dp"/>
+                    
+                    <TextView
+                        android:id="@+id/project_add_partner_salary_id"
+                        style="@style/user_info_init_value"
+                        android:text="平均水平"
+                        android:layout_margin="10dp"/>
+                </LinearLayout>
+                
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp" >
+
+                <!--
+                <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+                    android:text="@string/project_add_project_desc"/>                   -->
+
+                    <EditText
+                        android:id="@+id/project_add_project_desc_id"
+                        style="@style/user_info_init_value"
+                        android:background="@color/gray_white"
+                        android:hint="@string/project_add_project_desc"
+                        android:textColorHint="@color/black" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/project_list_bg_color"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <com.beijing.together.activity.widget.RoundImageView
+            android:id="@+id/user_photo_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_name"/>
+
+        <TextView
+            android:id="@+id/user_name_id"
+            style="@style/common_text_title_black"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/user_photo_id"
+            android:text="王二胖"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- 用户基本信息 -->
+        <LinearLayout
+            android:id="@+id/user_basic_info_ll_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name_id"
+            android:layout_toRightOf="@id/user_photo_id"
+            android:orientation="horizontal" 
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                style="@style/common_text_title_black"
+                android:layout_marginRight="1dp"
+                android:text="#"
+                android:textColor="@color/abs__primary_text_holo_light"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/user_city_id"
+                style="@style/common_text_title_black"
+                android:layout_marginRight="1dp"
+                android:text="北京"
+                android:textColor="@color/abs__primary_text_holo_light"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/common_text_title_black"
+                android:text="#"
+                android:textColor="@color/abs__primary_text_holo_light"
+                android:textSize="16sp" />
+        </LinearLayout>
+        
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:layout_toRightOf="@id/user_photo_id"
+			    android:layout_below="@id/user_basic_info_ll_id"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginTop="5dp"
+			    android:id="@+id/user_basic_info_first_id">
+            	<LinearLayout 
+            	    android:layout_width="0dp"
+            	    android:layout_height="wrap_content"
+            	    android:layout_weight="1"
+            	    android:gravity="left">
+			        <TextView
+			            android:id="@+id/user_company_text_id"
+			            style="@style/common_text_title_black_small_size"
+			            android:textStyle="bold"
+			            android:text="所在公司:" />
+			
+			        <TextView
+			            android:id="@+id/user_company_value_id"
+			            style="@style/common_text_title_black_small_size"
+			            android:text="腾讯"/>
+		        </LinearLayout>
+		        <LinearLayout 
+            	    android:layout_width="0dp"
+            	    android:layout_height="wrap_content"
+            	    android:layout_weight="1"
+            	    android:gravity="right">
+			        <TextView
+			            android:id="@+id/user_posiont_text_id"
+			            style="@style/common_text_title_black_small_size"
+			            android:textStyle="bold"
+			            android:text="目前职位:" />
+			
+			        <TextView
+			            android:id="@+id/user_posiont_value_id"
+			            style="@style/common_text_title_black_small_size"
+			            android:text="CEO"/>
+		        </LinearLayout>
+		     </LinearLayout> 
+		     <LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_below="@id/user_basic_info_first_id"
+				    android:layout_toRightOf="@id/user_photo_id"
+				    android:layout_marginLeft="10dp"
+				    android:layout_marginTop="5dp"
+				    android:gravity="left"
+				    android:id="@+id/user_basic_info_second_id">
+                 <TextView
+		            android:id="@+id/user_vistordomain_text_id"
+		            style="@style/common_text_title_black_small_size"
+		            android:textStyle="bold"
+		            android:text="投资领域:" />
+		        <TextView
+		            android:id="@+id/user_vistordomain_value_id"
+		            style="@style/common_text_title_black_small_size"
+		            android:textColor="@color/common_orange"
+		            android:text="医疗健康 金融 互联网  游戏 "/>
+		      </LinearLayout>
+		      
+		       <LinearLayout 
+				    android:layout_width="fill_parent"
+				    android:layout_height="wrap_content"
+				    android:orientation="horizontal"
+				    android:layout_below="@id/user_basic_info_second_id"
+				    android:layout_toRightOf="@id/user_photo_id"
+				    android:layout_marginLeft="10dp"
+				    android:layout_marginTop="5dp"
+				    android:gravity="left"
+				    android:id="@+id/user_basic_info_three_id">
+                 <TextView
+		            android:id="@+id/user_visitoridea_text_id"
+		            style="@style/common_text_title_black_small_size"
+		            android:textStyle="bold"
+		            android:text="投资理念:" />
+		        <TextView
+		            android:id="@+id/user_visitoridea_value_id"
+		            style="@style/common_text_title_black_small_size"
+		            android:text="在创业中的我们，大都草根创业者，不去命运，不甘平庸，励志创造传奇的逗比青年"/>
+		    </LinearLayout>
+   </RelativeLayout>
+		
+
+    <!-- 底部状态信息 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综合"
+            android:textColor="@color/project_list_item_status_color"
+            android:textSize="14sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/project_status_image"
+                 android:layout_gravity="center_vertical"
+                android:src="@drawable/attention_flag" />
+
+            <TextView
+                android:id="@+id/user_attented_value_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:text="100"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/project_list_item_status_color" />
+
+            <ImageView
+                style="@style/project_status_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/collection_flag" />
+
+            <TextView
+                android:id="@+id/user_collection_value_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="100"
+                android:textColor="@color/project_list_item_status_color" />
+            
+            <TextView 
+	              style="@style/common_text_white"
+	              android:padding="5dp"
+	              android:text="联系他"
+	              android:gravity="center"
+	              android:id="@+id/user_contact_others_id"
+	              android:background="@color/green"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/actionbar_bg"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/title_back_id"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:textSize="24sp"/>
+
+    <TextView 
+        android:id="@+id/title_text_mid_id"
+        android:layout_centerInParent="true"
+        style="@style/title_text_mid"/>
+</RelativeLayout>

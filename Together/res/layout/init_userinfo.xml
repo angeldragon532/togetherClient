@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:background="@color/black"
+       android:gravity="center_vertical">
+      
+      <TextView 
+          android:text="编辑个人资料"
+          style="@style/common_text_whitebold"
+          android:textSize="20sp"
+          android:layout_centerInParent="true"/>
+      
+      <TextView 
+          android:id="@+id/user_edit_commit_id"
+          android:text="完成"
+          android:clickable="true"
+          style="@style/common_text_whitebold"
+          android:textSize="20sp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"/>
+  </RelativeLayout>
+    
+ <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/gray_white"
+    android:scrollbars="none">
+
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp">
+
+                <com.beijing.together.activity.widget.RoundImageView
+                    android:id="@+id/user_phone_id"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/my_name"
+                    imagecontrol:border_inside_color="#fff7f2e9"
+                    imagecontrol:border_outside_color="#ffd5d1c8"
+                    imagecontrol:border_thickness="2dp"/>
+                
+                 <TextView
+                    android:id="@+id/user_name__id"
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:text="二胖"/>
+            </LinearLayout>
+            
+         <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_name"/>
+
+                <EditText
+                    android:id="@+id/user_edit_nikename_id"
+                    style="@style/user_info_init_value"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/common_hint_grey"
+                    android:hint="@string/user_info_not_add_info"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+                
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_city" />
+
+                <TextView
+                    android:id="@+id/user_edit_city_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+        </LinearLayout>
+        
+        <TextView 
+            style="@style/user_info_init_text"
+            android:text="@string/user_info_create_info"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"/>
+         
+         <!--创业档案 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp" >
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_current_status"/>
+
+                <TextView
+                    android:id="@+id/user_edit_curstatus_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+                
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_redirect" />
+
+                <TextView
+                    android:id="@+id/user_edit_redirect_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+              
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_attention" />
+
+                <TextView
+                    android:id="@+id/user_edit_attention_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+        </LinearLayout>   
+
+        <!-- 个人档案 -->
+		<TextView 
+            style="@style/user_info_init_text"
+            android:text="@string/user_info_person_info"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"/>
+		
+          <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp" >
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_phone"/>
+
+                <TextView
+                    style="@style/user_info_init_value"
+                    android:clickable="false"
+                    android:text="已验证"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+                
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_email" />
+
+                <TextView
+                    android:id="@+id/user_edit_email_id"
+                    style="@style/user_info_init_value"
+                    android:clickable="false"
+                    android:text="未验证"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+        </LinearLayout>  
+
+      <!-- 创业背景 -->
+	  <TextView 
+            style="@style/user_info_init_text"
+            android:text="@string/user_info_create_background"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="left"/>
+	  
+		 <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp" >
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_keeptime_notmoney"/>
+
+                <TextView
+                    android:id="@+id/user_edit_keepmoney_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+                
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_output_money" />
+
+                <TextView
+                    android:id="@+id/user_edit_outputmoney_id"
+                    style="@style/user_info_init_value"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+              
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_work" />
+
+                <TextView
+                    android:id="@+id/user_edit_work_id"
+                    style="@style/user_info_init_value"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+             
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+              
+              
+               <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="@string/user_info_education" />
+
+                <TextView
+                   android:id="@+id/user_edit_education_id"
+                    style="@style/user_info_init_value"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:text="@string/user_info_not_add_info"
+                    android:textColor="@color/common_hint_grey"/>
+             </LinearLayout>
+        </LinearLayout> 
+		 
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>	

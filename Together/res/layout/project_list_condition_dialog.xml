@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="10dp">
+    
+    <!-- 城市信息 -->
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg"
+        android:padding="10dp"
+        android:layout_marginTop="25dp"
+        android:scrollbars="none">
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView 
+            android:text="城市"
+            android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:gravity="center"
+	          android:id="@+id/project_condition_city_id"
+	          android:padding="10dp"> 
+		        <ImageView
+		           style="@style/project_status_image"
+		           android:src="@drawable/dialog_city_flag"/>   
+		        <TextView
+		           style="@style/project_condition_dialog_value"
+		           android:text="请选择项目所在城市"
+		           android:layout_weight="1"/>
+		        
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/dialog_clear_flag"
+		            android:id="@+id/dialog_city_clear_id"
+		            android:visibility="gone"/>
+	      </LinearLayout>
+	      
+	       <TextView 
+            android:text="行业"
+             android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:gravity="center"
+	           android:id="@+id/project_condition_redirect_id"
+	          android:padding="10dp"> 
+		        <ImageView
+		           style="@style/project_status_image"
+		           android:src="@drawable/dialog_redirect_flag"/>   
+		        <TextView
+		           style="@style/project_condition_dialog_value"
+		           android:text="请选择项目所在行业"
+		           android:layout_weight="1"/>
+		        
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/dialog_clear_flag"
+		            android:id="@+id/dialog_redirect_clear_id"
+		            android:visibility="gone"/>
+	      </LinearLayout>
+	      
+	       <TextView 
+            android:text="类别"
+             android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:gravity="center"
+	          android:id="@+id/project_condition_type_id"
+	          android:padding="10dp"> 
+		        <ImageView
+		           style="@style/project_status_image"
+		           android:src="@drawable/dialog_type_flag"/>   
+		        <TextView
+		           style="@style/project_condition_dialog_value"
+		           android:text="请选选择项目类别"
+		           android:layout_weight="1"/>
+		        
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/dialog_clear_flag"
+		            android:id="@+id/dialog_type_clear_id"
+		            android:visibility="gone"/>
+	      </LinearLayout>
+	      
+	      <TextView 
+            android:text="合伙人"
+             android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:gravity="center"
+	          android:id="@+id/project_condition_patener_id"
+	          android:padding="10dp"> 
+		        <ImageView
+		           style="@style/project_status_image"
+		           android:src="@drawable/dialog_patener_flag"/>   
+		        <TextView
+		           style="@style/project_condition_dialog_value"
+		           android:text="请选择项目需求合伙人类型"
+		           android:layout_weight="1"/>
+		        
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/dialog_clear_flag"
+		            android:id="@+id/dialog_patener_clear_id"
+		            android:visibility="gone"/>
+	      </LinearLayout>
+	      
+	      
+	       <TextView 
+            android:text="项目状态"
+             android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:id="@+id/project_condition_status_id"
+	          android:padding="10dp"> 
+	          <RadioGroup 
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:orientation="horizontal"
+	              android:gravity="center">
+	              
+		       <RadioButton 
+	                android:textColor="@color/project_list_conditiondialog_subtitle_color"
+	                android:textSize="18sp"
+	                android:id="@+id/project_condition_status_all_id"
+	                style="@style/ProjectCheckboxTheme"
+	                android:text="全部"/>
+		       <RadioButton 
+	                android:textColor="@color/project_list_conditiondialog_subtitle_color"
+	                android:textSize="18sp"
+	                android:id="@+id/project_condition_status_online_id"
+	                style="@style/ProjectCheckboxTheme"
+	                android:text="上线"/>
+		       <RadioButton 
+	                android:textColor="@color/project_list_conditiondialog_subtitle_color"
+	                android:textSize="18sp"
+	                android:id="@+id/project_condition_status_ready_id"
+	                style="@style/ProjectCheckboxTheme"
+	                android:text="预热"/>
+		      </RadioGroup> 
+	      </LinearLayout>
+	      
+	      
+	       <TextView 
+            android:text="盈利"
+             android:layout_marginTop="5dp"
+            style="@style/project_condition_dialog_text"/>
+        
+	      <LinearLayout 
+	          android:layout_width="fill_parent"
+	          android:layout_height="60dp"
+	          android:background="@drawable/dialog_item_bg"
+	          android:orientation="horizontal"
+	          android:id="@+id/project_condition_income_id"
+	          android:padding="10dp"> 
+	          <RadioGroup 
+	              android:layout_width="fill_parent"
+	              android:layout_height="wrap_content"
+	              android:orientation="horizontal"
+	              android:gravity="center">
+		       <RadioButton 
+	                android:textColor="@color/project_list_conditiondialog_subtitle_color"
+	                android:textSize="18sp"
+	                android:id="@+id/project_condition_income_had_id"
+	                style="@style/ProjectCheckboxTheme"
+	                android:text="已盈利"/>
+		       <RadioButton 
+	                android:textColor="@color/project_list_conditiondialog_subtitle_color"
+	                android:textSize="18sp"
+	                android:id="@+id/project_condition_income_not_id"
+	                style="@style/ProjectCheckboxTheme"
+	                android:text="未盈利"/>
+		      </RadioGroup> 
+	      </LinearLayout>
+    </LinearLayout>
+   </ScrollView>  
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="top">
+         <ImageView 
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/close_dialog"
+	        android:id="@+id/dialog_close_id"
+        	android:layout_marginLeft="25dp"/>
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"/>
+      
+       <ImageView 
+	        android:layout_width="50dp"
+	        android:layout_height="50dp"
+	        android:src="@drawable/confirm_dialog"
+	        android:id="@+id/dialog_confirm_id"
+        	android:layout_marginRight="25dp"/>
+    </LinearLayout>
+     
+</RelativeLayout>
+    

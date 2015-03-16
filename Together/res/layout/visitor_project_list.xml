@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <TextView 
+        style="@style/common_text_title_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="投资项目："/>
+    
+   <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+        <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_launcher"
+           android:layout_centerVertical="true"
+           android:id="@+id/visitor_project_img_id"/> 
+         
+         <LinearLayout 
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:orientation="vertical" 
+              android:layout_centerVertical="true"
+              android:gravity="left"
+              android:layout_toRightOf="@id/visitor_project_img_id">
+             
+	             <TextView
+		           android:id="@+id/visitor_project_name_id"
+		           style="@style/common_text_title_black"
+		           android:textSize="16sp"
+		           android:text="北斗天使"
+		           android:textStyle="bold"/>
+	             
+	             <TextView
+		           android:id="@+id/visitor_project_redirect_id"
+		           style="@style/common_text_title_black"
+		           android:textSize="14sp"
+		           android:textColor="@color/common_desc_grey"
+		           android:text="北斗天使"
+		           android:singleLine="true"
+		           android:ellipsize="end"/>
+         </LinearLayout>
+      </RelativeLayout>  
+      
+       <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="2dp"
+           android:orientation="horizontal"
+           android:background="@drawable/list_divider"/>
+       
+       <RelativeLayout 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:gravity="center_vertical">
+        <ImageView
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_launcher"
+           android:layout_centerVertical="true"
+           android:id="@+id/visitor_project_img_id_1"/> 
+         
+         <LinearLayout 
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:orientation="vertical" 
+              android:layout_centerVertical="true"
+              android:gravity="left"
+              android:layout_toRightOf="@id/visitor_project_img_id_1">
+             
+	             <TextView
+		           android:id="@+id/visitor_project_name_id"
+		           style="@style/common_text_title_black"
+		           android:textSize="16sp"
+		           android:text="好项目"
+		           android:textStyle="bold"/>
+	             
+	             <TextView
+		           android:id="@+id/visitor_project_redirect_id"
+		           style="@style/common_text_title_black"
+		           android:textSize="14sp"
+		           android:text="啊手动阀手动阀手动阀盛大富翁，大法师为发射点发射点手动阀撒"
+		           android:singleLine="true"
+		           android:ellipsize="end"/>
+         </LinearLayout>
+      </RelativeLayout> 
+      
+         <LinearLayout 
+           android:layout_width="fill_parent"
+           android:layout_height="2dp"
+           android:orientation="horizontal"
+           android:background="@drawable/list_divider"
+           android:layout_marginTop="5dp"
+       	   android:layout_marginBottom="5dp"/>
+</LinearLayout>
+    

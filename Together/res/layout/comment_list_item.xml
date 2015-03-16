@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/comment_photo_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_name" />
+
+        <TextView
+            android:id="@+id/comment_name_id"
+            style="@style/common_text_title_black"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/comment_photo_id"
+            android:text="王二胖"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/comment_time_id"
+            style="@style/common_text_title_black"
+            android:textColor="#aeaeae"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="昨天12点"
+            android:textSize="16sp"/>
+
+ 		<TextView
+            android:id="@+id/comment_content_id"
+            style="@style/common_text_title_black"
+            android:textColor="#616161"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/comment_photo_id"
+            android:layout_below="@id/comment_name_id"
+            android:text="感觉这个项目不错，非常靠谱，可以试试投投"
+            android:textSize="16sp" />
+       
+</RelativeLayout>
+</LinearLayout>

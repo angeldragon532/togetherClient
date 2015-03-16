@@ -1,0 +1,168 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+   <include 
+       layout="@layout/title_text_text_text_three"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/common_text_title_black"
+            android:text="召唤合伙人"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/partner_add_technogic_checkbox_id"
+                style="@style/common_checkbox"
+                android:text="技术合伙人"/>
+            
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/partner_add_technogic_checkbox_content_id">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/common_text_title_black"
+                    android:text="合作方式："/>
+
+                <Spinner
+                    android:id="@+id/partner_add_technogic_spiner_workways_id"
+                    android:dropDownWidth="200dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    style="@style/common_text_title_black"
+                    android:text="股票期权："/>
+
+                <Spinner
+                    android:id="@+id/partner_add_technogic_spiner_opion_id"
+                    android:dropDownWidth="200dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    style="@style/common_text_title_black"
+                    android:text="薪资水平：" />
+
+                <Spinner
+                    android:id="@+id/partner_add_technogic_spiner_salary_id"
+                    android:dropDownWidth="200dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+                <TextView
+                    style="@style/common_text_title_black"
+                    android:text="补充说明："/>
+
+                <EditText
+                    android:id="@+id/partner_add_technogic_edit_other_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"/>
+            </LinearLayout>
+           </LinearLayout> 
+        </LinearLayout>
+
+        <!-- 营销合伙人 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                style="@style/common_checkbox"
+                android:text="营销合伙人" />
+        </LinearLayout>
+
+        <!-- 产品合伙人 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/partner_add_technogic_checkbox_id"
+                style="@style/common_checkbox"
+                android:text="产品合伙人" />
+        </LinearLayout>
+
+        <!-- 运营合伙人 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/partner_add_technogic_checkbox_id"
+                style="@style/common_checkbox"
+                android:text="运营合伙人" />
+        </LinearLayout>
+
+        <!-- 设计合伙人 -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/partner_add_technogic_checkbox_id"
+                style="@style/common_checkbox"
+                android:text="设计合伙人" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="fill" >
+    
+     <include
+        android:id="@+id/project_detail_title_id"
+        layout="@layout/title_back_img_text_text_three" />
+    
+    <ScrollView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/project_detail_title_id"
+        android:id="@+id/my_message_id"
+        android:paddingBottom="50dp">
+        
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">   
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        
+      <ImageView 
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/my_name"
+          android:layout_margin="5dp"
+          android:scaleType="fitXY"
+          android:id="@+id/project_detail_photo_id"/>
+      
+      <TextView 
+          android:id="@+id/project_detail_name_id"
+          style="@style/common_text_title_black"
+          android:textSize="22sp"
+          android:layout_toRightOf="@id/project_detail_photo_id"/>
+      
+      <TextView 
+          style="@style/common_text_title_black"
+          android:text="一款基于OTO的聊天工具"	
+          android:layout_toRightOf="@id/project_detail_photo_id"
+          android:layout_below="@id/project_detail_name_id"
+          android:layout_marginTop="5dp"
+          android:maxLines="3"
+          android:ellipsize="end"
+          android:id="@+id/project_detail_desc_id"/>
+      
+      <LinearLayout 
+          android:id="@+id/project_detail_flag_info_id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_toRightOf="@id/project_detail_photo_id"
+          android:layout_below="@id/project_detail_desc_id"
+          android:gravity="left|center_vertical"> 
+          
+          <ImageView 
+              style="@style/project_status_image"
+              android:src="@drawable/location_flag"/>
+	       <TextView
+	           android:id="@+id/chat_info_id"
+	           style="@style/project_status_text"
+	           android:text="199"
+	           android:gravity="center"
+	           android:textColor="@color/common_collection_grey"
+	           android:layout_marginRight="10dp"/>
+	       <ImageView 
+              style="@style/project_status_image"
+              android:src="@drawable/chat_flag"/>
+	        <TextView
+	           android:id="@+id/attention_info_id"
+	           style="@style/project_status_text"
+	           android:text="100"
+	           android:gravity="center"
+	           android:textColor="@color/common_collection_grey"
+	           android:layout_marginRight="10dp"/>
+	         <ImageView 
+              style="@style/project_status_image"
+              android:src="@drawable/attention_flag"/>
+	         <TextView
+	           android:id="@+id/collection_info_id"
+	           style="@style/project_status_text"
+	           android:text="100"
+	            android:gravity="center"
+	           android:textColor="@color/common_collection_grey"
+	           android:layout_marginRight="10dp"/>
+	          <ImageView 
+              style="@style/project_status_image"
+              android:src="@drawable/collection_flag"/>
+	         <TextView
+	           android:id="@+id/collection_info_id"
+	           style="@style/project_status_text"
+	           android:text="50"
+	            android:gravity="center"
+	           android:textColor="@color/common_collection_grey"
+	           android:layout_marginRight="10dp"/>
+	   </LinearLayout>
+	   
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"> 
+      <TextView 
+          android:id="@+id/project_detail_incomestatus_id"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="已盈利"
+          android:gravity="center"
+          android:padding="5dp"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          android:textStyle="bold"
+          android:background="@drawable/flag_riado_orange"
+          android:layout_marginRight="5dp"/>
+      
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/black"
+          android:textSize="14sp"
+          android:padding="5dp"
+          android:gravity="center"
+          android:text="上线运行"
+          android:background="@drawable/flag_riado_orange"
+          android:id="@+id/project_detail_onlinestatus_id"/> 
+    </LinearLayout>   
+      
+       <LinearLayout 
+        android:id="@+id/project_detail_domain_flag_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/project_detail_flag_info_id">
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0T0"
+             android:textColor="@color/black"
+             style="@style/project_status_text"
+             android:textSize="15sp"
+             android:padding="2sp"
+             android:background="@drawable/flag_riado_white"
+             android:gravity="center"
+             android:layout_marginRight="10dp"/>
+         
+          <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0T0"
+             android:textColor="@color/black"
+             style="@style/project_status_text"
+             android:textSize="15sp"
+             android:padding="2sp"
+             android:background="@drawable/flag_riado_white"
+             android:gravity="center"
+             android:layout_marginRight="10dp"/>
+          
+          <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="电子商务"
+             android:textColor="@color/black"
+             style="@style/project_status_text"
+             android:textSize="15sp"
+             android:padding="2sp"
+             android:background="@drawable/flag_riado_white"
+             android:gravity="center"
+             android:layout_marginRight="10dp"/>
+     </LinearLayout>
+      
+      <ProgressBar
+			style="?android:attr/progressBarStyleHorizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="10dp"
+			android:layout_below="@id/project_detail_domain_flag_id"
+			android:layout_marginRight="10dp"
+			android:layout_marginTop="10dp"
+			android:layout_marginBottom="10dp"
+			android:progress="30"
+			android:progressDrawable="@drawable/project_proress_style"
+			android:id="@+id/project_fininace_id"/>
+      
+     <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:gravity="center"
+          android:layout_below="@id/project_fininace_id">
+		     <TextView 
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:text="已融资80万"
+		         android:gravity="left|center_vertical"
+		         android:layout_weight="1"
+		         android:textColor="@color/black"
+		         android:textSize="14sp"
+		         android:id="@+id/project_detail_finance_id"/>
+		         
+		     <TextView 
+		          android:layout_width="wrap_content"
+		          android:layout_height="wrap_content"
+		          android:textColor="@color/black"
+		          android:textSize="14sp"
+		          android:gravity="center"
+		          android:text="剩余30天"
+		          android:id="@+id/project_detail_leave_time_id"/>
+      </LinearLayout>
+  </RelativeLayout>     
+  
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载地址"	
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_marginRight="10dp"/>
+        
+        <ImageView 
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginRight="10dp"/>
+        
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginRight="10dp"/>
+    </LinearLayout>
+         
+  <com.beijing.together.activity.widget.MyHorizontalScrollView
+        android:id="@+id/id_horizontalScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:scrollbars="none" >
+        <LinearLayout
+            android:id="@+id/id_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </com.beijing.together.activity.widget.MyHorizontalScrollView> 
+    
+    
+    <!-- 项目描述 -->
+    <include layout="@layout/project_detail_description"/>
+    
+    <!-- 团队介绍 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <LinearLayout 
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+		     
+             <TextView 
+            style="@style/common_text_title_black"
+	            android:layout_gravity="top|left"
+	            android:text="创业团队"
+	            android:layout_weight="1"/>
+            <TextView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="团队"
+	            android:textSize="16sp"/>
+        
+		       <RatingBar 	
+		         android:id="@+id/ratingBar"
+			     android:layout_height="wrap_content"
+			     android:layout_width="wrap_content"
+			     android:isIndicator="true"
+			     android:layout_gravity="center_vertical"
+				 style="?android:attr/ratingBarStyleSmall"
+			     android:rating="3.5"
+			     android:numStars="5"
+			     android:stepSize="0.5"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/my_name"
+                android:layout_marginRight="10dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="创业人"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CEO"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国内知名企业的职位"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            
+        </LinearLayout>
+        
+        
+          <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:gravity="center">
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/my_name"
+                android:layout_marginRight="10dp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合伙人"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运营"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="国内知名企业的职位"
+                android:textColor="@color/black"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </LinearLayout>
+    
+     <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/list_divider"/>
+    
+    <!-- 招聘 -->
+     <LinearLayout  
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="center">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="招贤榜单"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+            
+            <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/arrow_left_grey"
+                android:id="@+id/project_detail_arrow_left_id"/>
+            
+            <com.beijing.together.activity.widget.MyHorizontalScrollView
+		        android:id="@+id/id_horizontalScrollView_partener"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:layout_gravity="center"
+		        android:background="@android:color/white"
+		        android:scrollbars="none" >
+		        <LinearLayout
+		            android:id="@+id/id_gallery1"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:orientation="horizontal">
+		        </LinearLayout>
+    </com.beijing.together.activity.widget.MyHorizontalScrollView> 
+        
+	        <!--  <android.support.v4.view.ViewPager
+			        android:id="@+id/vPager"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_gravity="center"
+			        android:flipInterval="30"
+			        android:layout_weight="1"
+			        android:layout_marginLeft="10dp"
+			        android:layout_marginRight="10dp"
+			        android:persistentDrawingCache="animation"/>-->
+	        
+	         <ImageView 
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/arrow_right_grey"
+                android:id="@+id/project_detail_arrow_right_id"/>
+        
+        </LinearLayout>
+    </LinearLayout> 
+    
+    <!-- 合作方式 -->
+    <RelativeLayout  
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp">
+        
+         <TextView 
+            android:id="@+id/project_detail_partner_ways_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合作方式  :"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+         
+         <TextView 
+            android:layout_toRightOf="@id/project_detail_partner_ways_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="全职  "
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+         <TextView 
+             android:id="@+id/project_detail_salary_leavel_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="无工资  "
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+          <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="薪资水平 :"
+            android:layout_toLeftOf="@id/project_detail_salary_leavel_id"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    
+    
+      <!-- 股权方式 -->
+       <LinearLayout  
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp">
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="股份期权:"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5%-10% 高薪可以满足，但降低股份"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    </LinearLayout>
+    
+  <!-- 合作职责 -->
+  	<LinearLayout  
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp">
+         
+  	     <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合作职责:"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="负责技术方面的研发管理工作"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+    	</LinearLayout>
+    	
+   	<LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/list_divider"/>
+   	
+   	
+  	<!-- 评论 -->
+  	<LinearLayout  
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         android:padding="10dp"
+         android:gravity="center_vertical">
+         
+  	     <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论:"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:textSize="16sp"/>
+        
+         <ImageView 
+             android:layout_width="50dp"
+             android:layout_height="50dp"
+             android:src="@drawable/arrow_up_grey"
+             android:id="@+id/project_detail_comment_arrow_id"/>
+    </LinearLayout>
+    <com.beijing.together.activity.widget.CommentListView 
+        android:id="@+id/project_detail_comment_list_id"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:divider="@drawable/list_divider"
+        android:scrollbars="none"
+        android:scrollingCache="@null"/>
+    </LinearLayout>
+  </ScrollView>	
+  <!-- 底部标签 -->
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:orientation="horizontal"
+	        android:gravity="right|center_vertical"
+	        android:background="@color/gray_white"
+	        android:layout_alignParentBottom="true">
+	        
+	        <ImageView
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:src="@drawable/send_falg"/>
+	        
+	         <ImageView
+	           android:layout_height="50dp"
+	           android:layout_width="50dp"
+	           android:src="@drawable/collection_flag_comment"/>
+	          
+	           
+	           <ImageView
+	            android:layout_height="50dp"
+	            android:layout_width="50dp"
+	            android:src="@drawable/share_flag"/>
+	        
+	    </LinearLayout>
+</RelativeLayout> 

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Together</string>
+    <string name="app_welcom_flag">让我们一起来改变世界</string>
+    <string name="anim_zoom">Zoom</string>
+    <string name="alert">提示</string>
+     <string name="confirm">确定</string>
+    
+    
+    <string name="submenu_query_project">找项目</string>
+    <string name="submenu_query_create">找发起人</string>
+    <string name="submenu_query_partener">找合伙人</string>
+    <string name="submenu_query_visitor">找投资人</string>
+    <string name="submenu_query_resource">找创业资源</string>
+    <string name="submenu_query_managerproject">管理我的项目</string>
+    
+    <string name="actionbar_order_filter">筛选</string>
+    <string name="actionbar_list_sort">排序</string>
+    <string name="actionbar_list_search">搜索</string>
+    
+    <!-- 初始化用户信息 -->
+     <string name="user_info_name">昵称</string>
+     <string name="user_info_city">地区</string>
+     <string name="user_info_current_status">目前状态</string>
+     <string name="user_info_redirect">个人定位</string>
+     <string name="user_info_attention">关注领域</string>
+     <string name="user_info_phone">手机</string>
+     <string name="user_info_email">邮箱</string>
+     <string name="user_info_keeptime_notmoney">无薪可维持</string>
+     <string name="user_info_output_money">创业出资</string>
+     <string name="user_info_wish_opion">期望保障</string>
+     <string name="user_info_work">工作经验</string>
+     <string name="user_info_education">教育经历</string>
+     <string name="user_info_desc">个人简介</string>
+     <string name="user_info_project_desc">项目描述</string>
+     <string name="user_info_create_info">创业档案</string>
+     <string name="user_info_person_info">个人档案</string>
+     
+      <!-- 添加项目信息 -->
+     <string name="project_add_name">请输入项目名称</string>
+     <string name="project_add_city">所在城市</string>
+     <string name="project_add_select_redirect">选择行业</string>
+     <string name="project_add_fininace_status">融资阶段</string>
+     <string name="project_add_run_status">运营状态</string>
+     <string name="project_add_develop_time">发展阶段</string>
+     <string name="project_add_need_pataner">招聘合伙人</string>
+     <string name="project_add_city_1">请选择所在城市</string>
+     <string name="project_add_select_redirect_1">请选择行业</string>
+     <string name="project_add_fininace_status_1">请选择融资阶段</string>
+     <string name="project_add_run_status_1">请选择运营状态</string>
+     <string name="project_add_develop_time_1">请选择发展阶段</string>
+     <string name="project_add_need_pataner_1">添加招聘合伙人</string>
+     <string name="project_add_project_desc">请输入项目简介(用一句话概括你的项目，不超过20字)</string>
+     <string name="project_add_free_task">需要对以上描述的真实性负责，如果有其他情况，后果自负</string>
+     
+     
+     <string name="user_info_create_background">创业背景</string>
+     <string name="user_info_not_add_info">未填写</string>
+    
+     <!-- XListView 相关 -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+
+  	<string-array name="userinfo_current_status">
+        <item>兼职</item>
+        <item>考虑全职</item>
+        <item>全职</item>
+    </string-array>
+    
+  	<string-array name="userinfo_attention">
+        <item>互联网</item>
+        <item>物联网</item>
+        <item>媒体</item>
+        <item>社交</item>
+        <item>点子商务</item>
+        <item>游戏</item>
+        <item>旅游</item>
+        <item>金融</item>
+    </string-array>
+    
+  	<string-array name="userinfo_redirect">
+        <item>开发人员</item>
+        <item>运营人员</item>
+        <item>销售人员</item>
+        <item>设计人员</item>
+        <item>广告人员</item>
+    </string-array>
+    
+  	<string-array name="userinfo_keepmoney">
+        <item>不考虑</item>
+        <item>一个月</item>
+        <item>三个月</item>
+        <item>半年</item>
+        <item>1年</item>
+        <item>若干年 </item>
+    </string-array>
+    
+  	<string-array name="userinfo_outputmoney">
+        <item>1万</item>
+        <item>5万</item>
+        <item>10万</item>
+        <item>30万</item>
+        <item>50万</item>
+        <item>100万 </item>
+    </string-array>
+    
+  	<string-array name="partner_work_ways">
+        <item>全职</item>
+        <item>兼职</item>
+        <item>面议 </item>
+    </string-array>
+    
+  	<string-array name="partner_opion">
+        <item>低于1%</item>
+        <item>1%-5%</item>
+        <item>5%-10% </item>
+        <item>10%-15% </item>
+        <item>15%-20% </item>
+        <item>20%-25% </item>
+        <item>25%-30% </item>
+        <item>30%-35% </item>
+        <item>高于35% </item>
+    </string-array>
+    
+  	<string-array name="partner_salary">
+        <item>市场水平</item>
+        <item>基本保障</item>
+        <item>无工资 </item>
+    </string-array>
+
+    <!-- time -->
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="tommorow">明天</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="second">秒</string>
+    <string name="ago">前</string>
+    <string name="days_ago">%1$d天前</string>
+    <string name="time_today">今天%1$d%2$s前</string>
+
+    <string name="visitor_idea">\u0020\u0020\u0020\u0020理念就是你的思想在实战中的不断磨合、来自于自身心性的升华。 它是一种抽象而又高度概括的东西．它不是思想过程和方法，而是全部思想的总纲。是思想的根本原则。也正是我们所信奉的根本。
+        理念是不可能用语言完整地去表述和传授，它需要用心去体会，去领悟，去思考</string>
+     <string name="visitor_others">人缘，资源，经验，行政，人力等指导</string>
+
+    <!-- setting -->
+    <string name="hotel_list_num">酒店列表数量</string>
+    <string name="flight_list_num">航班列表数量</string>
+    <string name="show_hotel_picture">显示酒店列表图片</string>
+    <string name="departure_city">默认起飞城市</string>
+    <string name="field_departure_city">默认起飞城市：</string>
+    <string name="class_like">舱位偏好</string>
+    <string name="setting_3g">2G/3G/4G下无图模式</string>
+    <string name="setting_sina">新浪微博</string>
+    <string name="setting_weixin">微信</string>
+    <string name="setting_update">版本更新</string>
+    <string name="setting_about">关于艺龙</string>
+    <string name="setting_weixin_auth">微信授权</string>
+    <string name="setting_help">使用帮助</string>
+    <string name="share_setting_about">分享设置</string>
+    <string name="share_setting_bound">绑定</string>
+    <string name="setting_understand_elong">了解艺龙</string>
+    <string name="setting_service_tel">客服电话</string>
+    <string name="setting_choose_hotel">订酒店 用艺龙</string>
+    <string name="setting_service_tel_num">400-666-1166</string>
+    <string name="hotel_order_fillin_primeroomtip">恭喜，您找到的是该房型最优惠的价格。别错过！</string>
+    <string name="hotel_order_fillin_fivetoone_roomtip">登录预定还可参与\"会员奖励\"活动哦~</string>
+
+    <!-- railway search -->
+    <string name="railway_search_list_title">火车列表</string>
+    <string name="railway_search">\u0020\u0020列车查询</string>
+    <string name="train_name_search">车次查询</string>
+    <string name="oneway_search">站站查询</string>
+    <string name="station_search">车站查询</string>
+    <string name="field_leave_station">出发城市</string>
+    <string name="leave_station">出发站</string>
+    <string name="field_arrive_station">到达城市</string>
+    <string name="arrive_station">到达站</string>
+    <string name="field_train_name">车\u0020\u0020\u0020\u0020\u0020\u0020\u0020次</string>
+    <string name="field_train_name2">列车车次：</string>
+    <string name="train_name">车次</string>
+    <string name="field_railway_station_name">车站名称</string>
+    <string name="railway_station_name">车站名称</string>
+    <string name="field_leave_time_sort">时间</string>
+    <string name="field_consum_time_sort">历时</string>
+    <string name="field_price_sort">价格</string>
+    <string name="leave_time">出发</string>
+    <string name="field_arrive_time">到达时间</string>
+    <string name="arrive_time">到达</string>
+    <string name="hotel_hold_time">房间保留至</string>
+    <string name="bed_type_require">大双床要求</string>
+    <string name="arrive_time2">房间保留时间</string>
+    <string name="keep_time">保留时间</string>
+    <string name="costtime">历时</string>
+    <string name="train_type">车次类型</string>
+    <string name="train_list">\u0020\u0020列车列表</string>
+    <string name="list_map">\u0020\u0020地\u0020\u0020图</string>
+    <string name="list_map1">地图</string>
+    <string name="filter">筛\u0020\u0020选</string>
+    <string name="filter1">筛选</string>
+    <string name="train_filter">列车筛选</string>
+    <string name="train_sort">列车排序</string>
+    <string name="train_select">车型选择</string>
+    <string name="station_select">车站类型：</string>
+    <string name="trainsearch_select">车次选择：</string>
+    <string name="leavetime_select">出发时间选择</string>
+    <string name="arrivetime_select">到达时间选择</string>
+    <string name="train_minprice">￥%1$s起</string>
+    <string name="train_costtime">历时%1$s时%2$s分</string>
+    <string name="train_distance">里程%1$s公里</string>
+    <string name="train_arrivetime">到站%1$s(%2$s)</string>
+    <string name="train_leavetime">发车%1$s(%2$s)</string>
+    <string name="train_leave_time">发车时间：</string>
+    <string name="train_leave_time_not">发车时间</string>
+    <string name="train_arrive_time">到达时间：</string>
+    <string name="train_arrive_time_not">到达时间</string>
+    <string name="train_info">列车详情</string>
+    <string name="train_fare">参考票价：</string>
+    <string name="train_hardseat">硬座</string>
+    <string name="train_softseat">软座</string>
+    <string name="train_hardsleep">硬卧</string>
+    <string name="train_softsleep">软卧</string>
+    <string name="train_seata">一等座</string>
+    <string name="train_seatb">二等座</string>
+    <string name="train_seatsuper">特等座</string>
+    <string name="train_gjrw">高级软卧</string>
+    <string name="train_emptyprice">--</string>
+    <string name="train_station">车站</string>
+    <string name="train_stoptime">停留</string>
+    <string name="train_stoptime_title">里程</string>
+    <string name="more_railway">更多车次</string>
+    <string name="train_name_info">请输入车次如：G1</string>
+    <string name="train_station_info">请输入车站如：北京西</string>
+    <string name="flightsnews_airport_info">请输入机场如：北京首都</string>
+    <string name="taxi_input_airport_info">城市名或机场名</string>
+    <string name="card_issuer">发卡行</string>
+    <string name="field_card_issuer">发\u0020\u0020卡\u0020\u0020行：</string>
+    <string name="identifier">验证码</string>
+    <string name="field_identifier">验\u0020\u0020证\u0020\u0020码：</string>
+    <string name="recognise_code_note">卡背面验证码,没有则不填</string>
+    <string name="paper_type">证件类型</string>
+    <string name="field_paper_type">证件类型：</string>
+    <string name="field_passenger_type">乘客类型：</string>
+    <string name="select_paper_type">选择证件类型</string>
+    <string name="paper_num">证件号码</string>
+    <string name="field_paper_num">证件号码：</string>
+    <string name="select_paper_num">选择证件号码</string>
+    <string name="question_and_advice">问题&amp;建议：</string>
+    <string name="all">全部</string>
+    <string name="use_fakedata">使用本地数据(仅用于调试)</string>
+    <string name="feedback_content">意见内容</string>
+    <string name="feedback_submitlimit_warning">2分钟之内不能重复提交</string>
+    <string name="submit_succeed">提交成功</string>
+    <string name="submit_failed">提交失败</string>
+    <string name="app_update">版本更新</string>
+    <string name="app_update_prompt">发现新版本，现在更新？</string>
+    <string name="app_update_whatsnew_test">*新增团购功能，可以查询团购订单。\n\n*修正机票订单重复提交问题。\n\n*还不赶快更新！？</string>
+    <string name="app_update_newestversion">当前版本已经是最新版本</string>
+    <string name="shakesearch_locating_warning">正在校准定位，请稍后尝试</string>
+    <string name="hotel_search_locating">正在定位您的位置...</string>
+    <string name="shakesearch_locatefailed_warning">定位失败，请确认已打开手机定位功能</string>
+    <string name="elong_site">艺龙旅行网</string>
+    <string name="hotel_intro_characteristic">特色介绍</string>
+    <string name="hotel_intro_facility">设施服务</string>
+    <string name="hotel_intro_traffic">交通状况</string>
+    <string name="service_no">客服电话</string>
+    <string name="network_unavailable">网络不可用</string>
+    <string name="network_unavailable_prompt">当前无可用网络</string>
+    <string name="network_slow">浏览模式设定</string>
+    <string name="network_slow_prompt">是否隐藏酒店列表图片以节省流量?</string>
+    <string name="network_setting">设置</string>
+    <string name="server_error">服务器错误</string>
+    <string name="check_appupdate_onlaunch">启动时检查版本更新</string>
+    <string name="check_appupdate">检查版本更新</string>
+    <string name="hotel_showmap_first">周边酒店优先显示地图模式</string>
+    <string name="hotelsearch_no_results">未找到您搜索的酒店</string>
+    <string name="apartmentsearch_no_results">未找到您搜索的公寓</string>
+    <string name="hotelfaverite_no_results">您收藏的酒店已过期!</string>
+    <string name="hotelsearch_no_results_for_map">没有酒店位置信息</string>
+    <string name="flightsearch_no_results">未找到匹配航班</string>
+    <string name="railwaysearch_no_results">站点间没有车次或者票已售完，请重试</string>
+    <string name="hotelphoto_no_results">该酒店目前没有图片</string>
+    <string name="hotelcomment_no_results">该酒店目前没有评论</string>
+    <string name="hotelcomment_good_no_results">该酒店目前没有好评</string>
+    <string name="apartmentcomment_good_no_results">该公寓目前没有好评</string>
+    <string name="hotelcomment_bad_no_results">该酒店目前没有差评</string>
+    <string name="apartmentcomment_bad_no_results">该公寓目前没有差评</string>
+    <string name="grouponcomment_no_results">该酒店目前没有评论</string>
+    <string name="grouponcomment_good_no_results">该酒店目前没有好评</string>
+    <string name="grouponcomment_bad_no_results">该酒店目前没有差评</string>
+    <string name="hotelintro_no_results">该酒店目前没有简介</string>
+    <string name="hotel_room_full">该酒店已房满!</string>
+    <string name="hotelmap_no_results">该酒店目前没有地图信息</string>
+    <string name="delete_warning">确认删除？</string>
+    <string name="hotelorder_delete_warning">目前只支持本设备删除，且无法恢复，确认删除？</string>
+    <string name="hotelorder_notel_warning">未获取到酒店联系方式,如需帮助,请致电艺龙旅行网客服热线400-666-1166</string>
+    <string name="hotelorder_callhotel">拨打电话：</string>
+    <string name="cannot_delete_warning">处理中订单不能删除</string>
+    <string name="same_card_eror">已包含该信用卡</string>
+    <string name="more_flights">更多航班</string>
+    <string name="flightsearch_warning_beforetoday">查询时间不能小于当天</string>
+    <string name="train_warning_after20today">预订更多车票，请拨打客服电话，我们会竭诚为您服务。</string>
+    <string name="flightsearch_warning_beforedepart">返程日期不能早于去程日期</string>
+    <string name="flightsearch_warning_affterarrive">去程日期不能晚于返程日期</string>
+    <string name="flightsearch_warning_60days">如果您需要入住180天后的酒店，请致电400-666-1166，我们会竭诚为您服务。</string>
+    <string name="flight_transfer_book_tips">暂不支持中转机票手机预订，请致电400-666-1166，预订。</string>
+    <string name="flightsearch_warning_20days">如果您需要入住酒店超过20天，请致电400-666-1166，我们会竭诚为您服务。</string>
+    <string name="hotel_favorites_noresults">您没有收藏过酒店</string>
+    <string name="apartment_favorites_noresults">您没有收藏过公寓</string>
+    <string name="hotel_favorites_noresults_for_city">该城市没有收藏过酒店</string>
+    <string name="apartment_favorites_noresults_for_city">该城市没有收藏过公寓</string>
+    <string name="myelong_guest_noresults">您没有常用旅客信息</string>
+    <string name="myelong_createcard_noresults">您没有常用信用卡信息</string>
+    <string name="myelong_address_noresults">您没有常用地址信息</string>
+    <string name="myelong_passenger_noresults">当前没有乘机人信息，请添加</string>
+    <string name="myelong_railway_customer_noresults">当前没有乘客信息，请添加</string>
+    <string name="myelong_customer_noresults">您没有入住人信息</string>
+    <string name="select_customer_moreresults">系统最多支持9位乘机人</string>
+    <string name="calendar_type_ch">MM月dd日 kk:mm</string>
+    <string name="calendar_midnight">深夜</string>
+    <string name="citysearch_hint">请输入城市名称或拼音搜索</string>
+    <string name="citysearch_hint_hotel">酒店名、地址等</string>
+    <string name="citysearch_hint2">城市、行政区或景区</string>
+    <string name="citysearch_hint3">请输入城市名</string>
+    <string name="citysearch_hint6">城市、行政区或景区</string>
+    <string name="global_citysearch_hint">输入查询更多目的地,如:纽约</string>
+    <string name="unpresented">缺失</string>
+    <string name="nextday">次日</string>
+    <string name="thethreeday">第三天</string>
+    <string name="more_hotel_order">更多酒店订单</string>
+    <string name="more_flight_order">更多机票订单</string>
+    <string name="cancel_order">取消订单</string>
+    <string name="cancel_order_by_call">电话取消</string>
+    <string name="cancel_order_succeed">已取消订单</string>
+    <string name="cancel_order_agreearrange">已同意安排</string>
+    <string name="cancel_order_feedback_success">艺龙已经收到反馈，客服会优先处理您的订单</string>
+    <string name="location_disabled">定位功能未开启，现在开启?</string>
+    <string name="alipay_alert">订单还未支付，是否继续支付?</string>
+    <string name="enable_location">开启定位</string>
+    <string name="selfaddress_title">无法机场自取</string>
+    <string name="selfaddress_tip">请选择邮寄行程单</string>
+    <string name="creditcard_unselect">您未选择信用卡</string>
+    <string name="locating_failed">暂时无法获取您的位置</string>
+    <string name="loading">请稍候...</string>
+    <string name="web_loading">正在加载，请稍候...</string>
+    <string name="unknown_error">网络错误，请稍后再试</string>
+    <string name="unknown_paytype">未知支付方式</string>
+    <string name="unknown_content">未知</string>
+    <string name="paytype">支付方式</string>
+    <string name="differentdate_note">您的订单数据已过期，请重新搜索</string>
+    <string name="had_address">常用地址列表已包含该地址，请重新输入或修改列表中的地址。</string>
+    <string name="network_timeout_prompt">网络传输速度过慢，是否继续等待 ？</string>
+    <string name="continue_">继续</string>
+    <string name="go_on">重\u0020\u0020\u0020\u0020试</string>
+    <string name="dial">电话预订</string>
+    <string name="go_on_dial_message">网络不给力</string>
+    <string name="makesure_close_dialog">尚有内容未保存,确认关闭对话框?</string>
+    <string name="find_noting">没有找到任何结果</string>
+    <string name="incorrect_postcode_warning">请输入正确的邮政编码</string>
+    <string name="version_pattern">Ver %1$s</string>
+    <string name="auto_login">自动登录</string>
+    <string name="auto_login_warning">开启自动登录功能，在每次启动本程序时会自动登录您的账号。\n\n*本公司对于在自动登录情况下由于手机丢失而导致的客户信息泄露不承担任何法律责任，请您谅解。\n\n*是否选择自动登录？</string>
+    <string name="cancel_order_prompt">您确定要取消该订单?</string>
+    <string name="location_fail_tip">定位失败，是否重新定位？</string>
+    <string name="invalid_orderno">无效订单号</string>
+    <string name="room_unavailable_warning">对不起，您预订的房间已满或剩余房间不足。</string>
+    <string name="creditcard_verifycode_warning">该信用卡需要验证码，请填写验证码</string>
+    <string name="railway_select_traintype">您没有选择车型</string>
+    <string name="flight_airline_select">您没有选择航空公司</string>
+    <string name="flight_airport_select">您没有选择机场</string>
+    <string name="flight_airport_select_depart">您没有选择到达机场</string>
+    <string name="flight_airport_select_arrive">您没有选择起飞机场</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="warning_invalid_email">电子邮箱格式不正确，请重新输入。</string>
+    <string name="warning_noavailable_flights_today">%1$s(今天)已经没有可预订航班</string>
+    <string name="datefield_year">年</string>
+    <string name="datefield_month">月</string>
+    <string name="datefield_day">日</string>
+    <string name="datefield_day2">天</string>
+    <string name="datefield_hour">小时</string>
+    <string name="datefield_minute">分</string>
+    <string name="train_avoid_responsibility_tips">*客服电话:400-689-9617（工作时间：9:00-21:00）暂不提供电话预订、余票、票价查询服务</string>
+    <string name="train_search">查询</string>
+    <string name="train_search_use">使用说明</string>
+    <string name="train_search_leave">出发地</string>
+    <string name="train_search_leave_city">北京</string>
+    <string name="train_search_arrive">目的地</string>
+    <string name="train_search_latest_search">最近查询</string>
+    <string name="train_search_only_D_G">只看动车/高铁</string>
+    <string name="train_search_only_tickets">只看有票列车</string>
+    <string name="train_search_leave_date">出发日期</string>
+
+    <!-- railway order fill in -->
+    <string name="railway_order_fill_in_header">填写订单</string>
+    <string name="railway_order_fill_in_tips">注：暂不接受儿童票，军人票，团体票等预订服务</string>
+    <string name="railway_order_student_fill_toast_info"> 学生票暂按成人票价收取，出票成功后，退还差价</string>
+    <string name="railway_order_student_fill_in_tips"> 温馨提示： 学生票暂按成人票价收取，出票成功后，您的账号将在3-7个工作日收到差价部分的退款。\n
+        请根据实际酌情选择学生票，认真填写学生证上优惠乘车区间，艺龙不承担因学生等信息不符而无法取票或进站的责任。</string>
+    <string name="train_chooseseat_seats_infos_c_d_g">该车次仅有二等座支持购买学生票，若想选择学生票，请修改座席 </string>
+    <string name="train_chooseseat_seats_infos_other">该车次仅有硬座，硬卧支持购买学生票，若想选择学生票，请修改座席 </string>
+    <string name="railway_order_fill_in_next">提交订单</string>
+    <string name="select_seats_num">选择 车票数量</string>
+    <string name="select_seats_price">修改座席</string>
+    <string name="railway_price_pattern">￥%1$.1f</string>
+
+    <string-array name="railway_order_fillin_seats_num">
+        <item>1张</item>
+        <item>2张</item>
+        <item>3张</item>
+        <item>4张</item>
+        <item>5张</item>
+    </string-array>
+
+    <string name="railway_order_customer0">乘客1</string>
+    <string name="railway_order_customer1">乘客2</string>
+    <string name="railway_order_customer2">乘客3</string>
+    <string name="railway_order_customer3">乘客4</string>
+    <string name="railway_order_customer4">乘客5</string>
+    <string name="railway_order_customer_idcard">乘\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020客:</string>
+    <string name="railway__order_phone_is_null">请您填写手机号码</string>
+    <string name="railway_order_phone_is_error">您输入的手机号码有错误，请重新输入</string>
+    <string name="select_railway_customer">选择列车乘客</string>
+    <string name="railway_order_customer_name_issame">同一列列车的客人信息不能重复，请重新填写</string>
+    <string name="railway_order_customer_idnumber_issame">同一列列车的客人证件号码不能重复，请重新填写</string>
+    <string name="railway_order_customer_name_isnull">请您填写列车乘客姓名</string>
+    <string name="railway_order_certcode_is_null">请您输入验证码</string>
+    <string name="add_railwaycustomer_title">新增乘车人</string>
+    <string name="railway_addcustomer_tips">点击增加乘客</string>
+
+    <!-- railway order success -->
+    <string name="railway_order_success_title">支付订单</string>
+    <string name="railway_order_success_next">去支付</string>
+    <string name="railway_order_success_tips">注：请在一小时内完成支付，否则订单将自动被取消</string>
+    <string name="railway_order_apply_refound">申请退票</string>
+    <string name="railway_order_selectcustomer_is_notselected">请选择列车乘客！</string>
+    <string name="railway_order_seats_tips">座次类型：</string>
+
+    <!-- railway order booking success -->
+    <string name="railway_order_booking_success_title">订单成功</string>
+    <string name="railway_order_booking_success_tips">    注：\n•由于各铁路局相关政策、火车票票源紧张等原因，支付后无法保证100%出票成功，敬请谅解\n• 我们会在一个小时内给您短信通知，请您等待或者查看订单状态\n• 您的资金是安全的，如出票失败，票款会在3-7个工作日内退回到您的原支付账号
+    \n• 确认出票成功后，您需携带预订时使用的有效身份证件前往火车站售票窗口或代售点换取纸质车票后乘车，部分高铁动车车次支持刷二代身份证直接检票乘车
+</string>
+    <string name="railwayfaq_info">\u0031\u3001\u53d6\u7968\u000d\u000a\u0031\u0029\u0009\u786e\u8ba4\u51fa\u7968\u6210\u529f\u540e\uff0c\u60a8\u9700\u643a\u5e26\u9884\u8ba2\u65f6\u4f7f\u7528\u7684\u6709\u6548\u8eab\u4efd\u8bc1\u4ef6\u524d\u5f80\u706b\u8f66\u7ad9\u552e\u7968\u7a97\u53e3\u3001\u94c1\u8def\u5ba2\u7968\u4ee3\u552e\u70b9\u6216\u8f66\u7ad9\u81ea\u52a8\u552e\u53d6\u7968\u673a\u4e0a\u6362\u53d6\u7eb8\u8d28\u8f66\u7968\uff0c\u90e8\u5206\u9ad8\u94c1\u52a8\u8f66\u8f66\u6b21\u652f\u6301\u5237\u4e8c\u4ee3\u8eab\u4efd\u8bc1\u76f4\u63a5\u68c0\u7968\u4e58\u8f66\u3002\u000d\u000a\u0032\u0029\u0009\u4e8c\u4ee3\u8eab\u4efd\u8bc1\u65e0\u6cd5\u81ea\u52a8\u8bc6\u522b\u6216\u8005\u4f7f\u7528\u5176\u4ed6\u6709\u6548\u8eab\u4efd\u8bc1\u8d2d\u4e70\u7684\uff0c\u9700\u51fa\u793a\u4e58\u8f66\u4eba\u6709\u6548\u8eab\u4efd\u8bc1\u539f\u4ef6\u548c\u7a97\u53e3\u53d6\u7968\u53f7\uff08\u77ed\u4fe1\u4e2d\u4ee5\u5927\u5199\u5b57\u6bcd\u0045\u5f00\u5934\u7684\u53f7\u7801\uff09\u5230\u8f66\u7ad9\u7a97\u53e3\u6216\u4ee3\u552e\u70b9\u529e\u7406\u6362\u7968\u624b\u7eed\u3002\u000d\u000a\u0033\u0029\u0009\u4ee3\u552e\u70b9\u6536\u53d6\u4ee3\u552e\u8d39\u0035\u5143\u002f\u5f20\u3002\u53e6\u5916\u8f66\u7ad9\u552e\u7968\u7a97\u53e3\u53d6\u5f02\u5730\u7968\uff0c\u706b\u8f66\u7ad9\u5c06\u6536\u53d6\u4ee3\u552e\u8d39\u0035\u5143\u002f\u5f20\uff0c\u6b64\u9879\u6536\u8d39\u4e0e\u827a\u9f99\u65e0\u5173\u3002\u000d\u000a\u0034\u0029\u0009\u6682\u65e0\u914d\u9001\u670d\u52a1\u3002\u000d\u000a\u0032\u3001\u6539\u7b7e\u000d\u000a\u0031\u0029\u0009\u827a\u9f99\u6682\u4e0d\u63d0\u4f9b\u6539\u7b7e\u670d\u52a1\uff0c\u9700\u60a8\u81ea\u884c\u643a\u5e26\u8d2d\u7968\u65f6\u4f7f\u7528\u7684\u6709\u6548\u8bc1\u4ef6\u539f\u4ef6\u548c\u706b\u8f66\u7968\u3002\u5728\u706b\u8f66\u53d1\u8f66\u524d\u524d\u53bb\u59cb\u53d1\u5730\u706b\u8f66\u7ad9\u7a97\u53e3\u529e\u7406\u3002\u5982\u679c\u6539\u7b7e\u8fc7\u7a0b\u4e2d\u4ea7\u751f\u7684\u5e94\u9000\u7968\u6b3e\uff0c\u6211\u4eec\u5c06\u4f1a\u5728\u0033\u002d\u0032\u0030\u4e2a\u5de5\u4f5c\u65e5\u5185\u539f\u6e20\u9053\u9000\u8fd8\u3002\u000d\u000a\u0032\u0029\u0009\u7279\u522b\u63d0\u793a\uff1a\u94c1\u8def\u5c40\u89c4\u5b9a\u8f66\u7968\u53ea\u80fd\u6539\u7b7e\u4e00\u6b21\uff0c\u4e14\u5fc5\u987b\u662f\u76ee\u7684\u5730\u57ce\u5e02\u76f8\u540c\u7684\u8f66\u7968\u3002\u81ea\u0032\u0030\u0031\u0034\u5e74\u0031\u0032\u6708\u0033\u65e5\u8d77\uff0c\u94c1\u8def\u5ba2\u7968\u5ef6\u957f\u9884\u552e\u671f\u3002\u5ba2\u7968\u9884\u552e\u671f\u5ef6\u957f\u81f3\u0036\u0030\u5929\u540e\uff0c\u5f00\u8f66\u524d\u0034\u0038\u5c0f\u65f6\uff08\u4e0d\u542b\uff09\u4ee5\u4e0a\uff0c\u53ef\u6539\u7b7e\u9884\u552e\u671f\u5185\u7684\u5176\u4ed6\u5217\u8f66\uff1b\u5f00\u8f66\u524d\u0034\u0038\u5c0f\u65f6\u4ee5\u5185\uff0c\u53ef\u6539\u7b7e\u5f00\u8f66\u524d\u7684\u5176\u4ed6\u5217\u8f66\uff0c\u4e5f\u53ef\u6539\u7b7e\u5f00\u8f66\u540e\u81f3\u7968\u9762\u65e5\u671f\u5f53\u65e5\u0032\u0034\u003a\u0030\u0030\u4e4b\u95f4\u7684\u5176\u4ed6\u5217\u8f66\uff0c\u4e0d\u529e\u7406\u7968\u9762\u65e5\u671f\u6b21\u65e5\u53ca\u4ee5\u540e\u7684\u6539\u7b7e\uff1b\u5f00\u8f66\u4e4b\u540e\uff0c\u65c5\u5ba2\u4ecd\u53ef\u6539\u7b7e\u5f53\u65e5\u5176\u4ed6\u5217\u8f66\uff0c\u4f46\u53ea\u80fd\u5728\u7968\u9762\u53d1\u7ad9\u529e\u7406\u6539\u7b7e\u3002\u5df2\u7ecf\u6539\u7b7e\u7684\u8f66\u7968\u4e0d\u80fd\u518d\u6b21\u6539\u7b7e\uff0c\u4f46\u53ef\u5728\u6539\u7b7e\u540e\u8f66\u7968\u8f7d\u660e\u7684\u5217\u8f66\u5f00\u8f66\u524d\u9000\u7968\u3002\u000d\u000a\u0033\u3001\u9000\u7968\u000d\u000a\u0031\u0029\u0009\u827a\u9f99\u5de5\u4f5c\u65f6\u95f4\u5185\uff0c\u8ba2\u5355\u5df2\u51fa\u7968\u4e14\u672a\u6362\u53d6\u7eb8\u8d28\u8f66\u7968\uff0c\u5728\u53d1\u8f66\u524d\u0033\u5c0f\u65f6\u53ef\u4ee5\u5728\u201c\u706b\u8f66\u7968\u8ba2\u5355\u201d\u4e2d\u5728\u7ebf\u7533\u8bf7\u9000\u7968\u3002\u975e\u5de5\u4f5c\u65f6\u95f4\u6216\u8005\u5df2\u53d6\u7968\u7684\u4e58\u5ba2\uff0c\u5982\u9700\u9000\u7968\uff0c\u8bf7\u51ed\u8d2d\u7968\u65f6\u7684\u6709\u6548\u8bc1\u4ef6\u5728\u53d1\u8f66\u524d\u5230\u706b\u8f66\u7ad9\u9000\u7968\u7a97\u53e3\u529e\u7406\u9000\u7968\u3002\u000d\u000a\u0032\u0029\u0009\u6839\u636e\u94c1\u8def\u5c40\u9000\u7968\u89c4\u5b9a\uff1a\u81ea\u0032\u0030\u0031\u0034\u5e74\u0031\u0032\u6708\u0033\u65e5\u8d77\uff0c\u94c1\u8def\u5ba2\u7968\u5ef6\u957f\u9884\u552e\u671f\uff1b\u5ba2\u7968\u9884\u552e\u671f\u5ef6\u957f\u81f3\u0036\u0030\u5929\u540e\uff0c\u5bf9\u5f00\u8f66\u524d\u0031\u0035\u5929\uff08\u4e0d\u542b\uff09\u4ee5\u4e0a\u9000\u7968\u7684\uff0c\u4e0d\u6536\u53d6\u9000\u7968\u8d39\u3002\u8ddd\u79bb\u7968\u9762\u4e58\u8f66\u7ad9\u5f00\u8f66\u65f6\u95f4\u0031\u0035\u5929\uff08\u542b\uff09\u4ee5\u5185\u3001\u0034\u0038\u5c0f\u65f6\u4ee5\u4e0a\u7684\u6309\u7968\u4ef7\u0035\u0025\u8ba1\uff1b\u0032\u0034\u5c0f\u65f6\u4ee5\u4e0a\u3001\u4e0d\u8db3\u0034\u0038\u5c0f\u65f6\u7684\u6309\u7968\u4ef7\u0031\u0030\u0025\u8ba1\uff1b\u4e0d\u8db3\u0032\u0034\u5c0f\u65f6\u7684\u6309\u7968\u4ef7\u0032\u0030\u0025\u8ba1\u3002\u5e76\u6309\u7167\u6700\u4f4e\u0032\u5143\u002f\u5f20\u6536\u53d6\u9000\u7968\u8d39\u3002\u5982\u679c\u6539\u7b7e\u540e\u7684\u8f66\u7968\u4e58\u8f66\u65e5\u671f\u5728\u6625\u8fd0\uff08\u5373\u0032\u0030\u0031\u0035\u5e74\u0032\u6708\u0034\u65e5\u81f3\u0033\u6708\u0031\u0035\u65e5\uff09\u671f\u95f4\u7684\uff0c\u9000\u7968\u65f6\u4e00\u5f8b\u6536\u53d6\u0032\u0030\u0025\u7684\u9000\u7968\u8d39\u3002\u6700\u7ec8\u9000\u6b3e\u4ee5\u94c1\u8def\u5c40\u5b9e\u9000\u4e3a\u51c6\u3002\u000d\u000a\u0034\u3001\u5230\u5e10\u8bf4\u660e\u000d\u000a\u7531\u4e8e\u5404\u94c1\u8def\u5c40\u76f8\u5173\u653f\u7b56\u3001\u706b\u8f66\u7968\u7968\u6e90\u7d27\u5f20\u7b49\u539f\u56e0\uff0c\u652f\u4ed8\u540e\u65e0\u6cd5\u4fdd\u8bc1\u0031\u0030\u0030\u0025\u51fa\u7968\u6210\u529f\u3002\u000d\u000a\u0031\u0029\u0009\u65e0\u7968\u6216\u53d6\u6d88\u8ba2\u5355\u9000\u6b3e\u5230\u5e10\u8bf4\u660e\uff1a\u9000\u6b3e\u5230\u5e10\u65f6\u95f4\u7ea6\u4e3a\u0033\u002d\u0032\u0031\u5929\uff1b\u5e94\u9000\u7968\u6b3e\u6309\u94f6\u884c\u89c4\u5b9a\u65f6\u9650\u9000\u8fd8\u81f3\u8d2d\u7968\u65f6\u6240\u4f7f\u7528\u7684\u94f6\u884c\u5361\uff08\u539f\u6e20\u9053\u8fd4\u8fd8\uff09\uff0c\u8bf7\u6ce8\u610f\u67e5\u6536\u3002\u000d\u000a\u0032\u0029\u0009\u7279\u522b\u6ce8\u610f\u4e8b\u9879\uff1a\u82e5\u60a8\u770b\u5230\u8ba2\u5355\u72b6\u6001\u4e3a\u201c\u5df2\u9000\u6b3e\u201d\u4f46\u4e45\u672a\u6536\u5230\u9000\u6b3e\uff0c\u7531\u4e8e\u9000\u6b3e\u6d89\u53ca\u4e2a\u4eba\u5e10\u53f7\u9690\u79c1\uff0c\u8bf7\u60a8\u51ed\u5f53\u65f6\u652f\u4ed8\u7684\u4ea4\u6613\u53f7\u54a8\u8be2\u652f\u4ed8\u5e73\u53f0\u5ba2\u670d\u70ed\u7ebf\u3002\u000d\u000a\u652f\u4ed8\u5b9d\u5e73\u53f0\u5ba2\u670d\u70ed\u7ebf\uff1a\u0039\u0035\u0031\u0038\u0038\u0028\u0037\u002a\u0032\u0034\u5c0f\u65f6\u670d\u52a1\uff0c\u9700\u652f\u4ed8\u4ea4\u6613\u53f7\u0029\u000d\u000a\u0033\u0029\u0009\u5982\u9700\u9000\u7968\u62a5\u9500\u51ed\u8bc1\uff0c\u8bf7\u51ed\u8d2d\u7968\u6240\u4f7f\u7528\u7684\u4e58\u8f66\u4eba\u6709\u6548\u8eab\u4efd\u8bc1\u4ef6\u539f\u4ef6\u548c\u8ba2\u5355\u53f7\u7801\u5728\u529e\u7406\u9000\u7968\u4e4b\u65e5\u8d77\u0031\u0030\u65e5\u5230\u8f66\u7ad9\u9000\u7968\u7a97\u53e3\u7d22\u53d6\u3002\u000d\u000a\u0035\u3001\u9000\u4fdd\u000d\u000a\u0031\u0029\u0009\u7ebf\u4e0a\u9000\u7968\uff1a\u5982\u9700\u9000\u4fdd\uff0c\u8bf7\u60a8\u4e8e\u8be5\u6b21\u5217\u8f66\u6b63\u5e38\u65f6\u95f4\u51fa\u53d1\u524d\u0033\u5c0f\u65f6\uff08\u542b\uff09\uff0c\u767b\u9646\u827a\u9f99\u7f51\u7ad9\uff08\u0077\u0077\u0077\u002e\u0065\u006c\u006f\u006e\u0067\u002e\u0063\u006f\u006d\uff09\u6216\u624b\u673a\u5ba2\u6237\u7aef\u7533\u8bf7\u9000\u706b\u8f66\u7968\u7684\u540c\u65f6\u9000\u8ba2\u672c\u4fdd\u9669\u4ea7\u54c1\u3002\u9000\u4fdd\u6210\u529f\u540e\uff0c\u4fdd\u8d39\u5c06\u9000\u56de\u81f3\u539f\u652f\u4ed8\u5e10\u6237\u3002\u000d\u000a\u0032\u0029\u0009\u7a97\u53e3\u9000\u7968\uff1a\u5982\u9700\u9000\u4fdd\uff0c\u8bf7\u60a8\u4e8e\u8be5\u6b21\u5217\u8f66\u6b63\u5e38\u65f6\u95f4\u51fa\u53d1\u524d\u0033\u5c0f\u65f6\uff08\u542b\uff09\uff0c\u53ca\u65f6\u81f4\u7535\u827a\u9f99\u5ba2\u670d\uff08\u0034\u0030\u0030\u0036\u0038\u0039\u0039\u0036\u0031\u0037\uff09\u7533\u8bf7\u9000\u4fdd\u3002\u5426\u5219\u5c06\u6309\u7167\u539f\u8f66\u6b21\u4fe1\u606f\u751f\u6548\u3002\u000d\u000a\u0033\u0029\u0009\u6539\u7b7e\uff1a\u5982\u60a8\u5728\u706b\u8f66\u7ad9\u6539\u7b7e\u540e\uff0c\u8bf7\u53ca\u65f6\u81f4\u7535\u76f8\u5e94\u4fdd\u9669\u516c\u53f8\u5ba2\u670d\u7535\u8bdd\u8fdb\u884c\u62a5\u5907\u3002\u5982\u6ca1\u6709\u53ca\u65f6\u901a\u77e5\uff0c\u4fdd\u9669\u5c06\u6309\u539f\u8f66\u6b21\u751f\u6548\uff0c\u4e00\u65e6\u51fa\u9669\uff0c\u540e\u679c\u81ea\u884c\u627f\u62c5\u3002\u000d\u000a</string>
+    <string name="railwayfaq_info_1">\u0031\u3001\u53d6\u7968\u000d\u000a\u0031\uff09\u786e\u8ba4\u51fa\u7968\u6210\u529f\u540e\uff0c\u60a8\u9700\u643a\u5e26\u9884\u8ba2\u65f6\u4f7f\u7528\u7684\u6709\u6548\u8eab\u4efd\u8bc1\u4ef6\u524d\u5f80\u8f66\u7ad9\u552e\u7968\u7a97\u53e3\u3001\u94c1\u8def\u5ba2\u7968\u4ee3\u552e\u70b9\u6216\u8f66\u7ad9\u81ea\u52a8\u552e\uff08\u53d6\uff09\u7968\u673a\u4e0a\u6362\u53d6\u7eb8\u8d28\u8f66\u7968\uff0c\u90e8\u5206\u9ad8\u94c1\u52a8\u8f66\u8f66\u6b21\u652f\u6301\u5237\u4e8c\u4ee3\u8eab\u4efd\u8bc1\u76f4\u63a5\u68c0\u7968\u4e58\u8f66\u3002\u000d\u000a\u0032\uff09\u4e8c\u4ee3\u8eab\u4efd\u8bc1\u65e0\u6cd5\u81ea\u52a8\u8bc6\u522b\u6216\u8005\u4f7f\u7528\u5176\u4ed6\u6709\u6548\u8eab\u4efd\u8bc1\u8d2d\u4e70\u7684\uff0c\u9700\u51fa\u793a\u4e58\u8f66\u4eba\u6709\u6548\u8eab\u4efd\u8bc1\u539f\u4ef6\u548c\u7a97\u53e3\u53d6\u7968\u53f7\uff08\u77ed\u4fe1\u4e2d\u4ee5\u5927\u5199\u5b57\u6bcd\u0045\u5f00\u5934\u7684\u53f7\u7801\uff09\u5230\u8f66\u7ad9\u7a97\u53e3\u6216\u4ee3\u552e\u70b9\u529e\u7406\u6362\u7968\u624b\u7eed\u3002\u000d\u000a\u0033\uff09\u4ee3\u552e\u70b9\u6536\u53d6\u4ee3\u552e\u8d39\u0035\u5143\u002f\u5f20\u3002\u53e6\u5916\u8f66\u7ad9\u552e\u7968\u7a97\u53e3\u53d6\u5f02\u5730\u7968\uff0c\u706b\u8f66\u7ad9\u5c06\u6536\u53d6\u4ee3\u552e\u8d39\u0035\u5143\u002f\u5f20\u3002\u6b64\u9879\u6536\u8d39\u4e0e\u827a\u9f99\u65e0\u5173\u3002\u000d\u000a\u0034\uff09\u6682\u65e0\u914d\u9001\u670d\u52a1\u3002\u000d\u000a
+</string>
+    <string name="railwayfaq_info_2">\u0032\u3001\u6539\u7b7e\u000d\u000a\u0031\uff09\u827a\u9f99\u6682\u4e0d\u63d0\u4f9b\u6539\u7b7e\u670d\u52a1\u002c\u9700\u60a8\u81ea\u884c\u643a\u5e26\u8d2d\u7968\u65f6\u4f7f\u7528\u7684\u6709\u6548\u8bc1\u4ef6\u539f\u4ef6\u548c\u706b\u8f66\u7968\u3002\u5728\u706b\u8f66\u53d1\u8f66\u524d\u524d\u53bb\u59cb\u53d1\u5730\u706b\u8f66\u7ad9\u7a97\u53e3\u529e\u7406\u002e\u5982\u679c\u6539\u7b7e\u8fc7\u7a0b\u4e2d\u4ea7\u751f\u7684\u5e94\u9000\u7968\u6b3e\u002c\u6211\u4eec\u5c06\u4f1a\u5728\u0033\u002d\u0032\u0030\u4e2a\u5de5\u4f5c\u65e5\u5185\u539f\u6e20\u9053\u9000\u8fd8\u002e\u000d\u000a\u0032\uff09\u7279\u522b\u63d0\u793a\uff1a\u94c1\u8def\u5c40\u89c4\u5b9a\u8f66\u7968\u53ea\u80fd\u6539\u7b7e\u4e00\u6b21\uff1b\u5df2\u7ecf\u6539\u7b7e\u7684\u8f66\u7968\u4e0d\u80fd\u518d\u6b21\u6539\u7b7e\uff0c\u4f46\u53ef\u5728\u6539\u7b7e\u540e\u8f66\u7968\u8f7d\u660e\u7684\u5217\u8f66\u5f00\u8f66\u524d\u9000\u7968\u3002\u000d\u000a
+</string>
+    <string name="railwayfaq_info_3">\u0033\u3001\u9000\u7968\u000d\u000a\u0031\uff09\u8ba2\u5355\u5df2\u51fa\u7968\u4e14\u672a\u6362\u53d6\u7eb8\u8d28\u8f66\u7968\uff0c\u5728\u53d1\u8f66\u524d\u0033\u5c0f\u65f6\u53ef\u4ee5\u5728\u201c\u4e2a\u4eba\u4e2d\u5fc3\u201d\u002d\u201c\u706b\u8f66\u7968\u8ba2\u5355\u201d\u4e2d\u5728\u7ebf\u7533\u8bf7\u9000\u7968\u3002\u6211\u4eec\u5728\u7ebf\u9000\u7968\u5904\u7406\u65f6\u95f4\u662f\u0037\u003a\u0030\u0030\u002d\u0032\u0033\u003a\u0030\u0030\u002e\u975e\u5de5\u4f5c\u65f6\u95f4\u6216\u8005\u5df2\u53d6\u7968\u7684\u4e58\u5ba2\uff0c\u5982\u9700\u9000\u7968\uff0c\u8bf7\u51ed\u8d2d\u7968\u65f6\u7684\u6709\u6548\u8bc1\u4ef6\u5728\u53d1\u8f66\u524d\u5230\u706b\u8f66\u7ad9\u9000\u7968\u7a97\u53e3\u529e\u7406\u9000\u7968\u3002\u000d\u000a\u0032\uff09\u6839\u636e\u94c1\u8def\u5c40\u9000\u7968\u89c4\u5b9a\uff1a\u9000\u7968\u624b\u7eed\u8d39\u6536\u53d6\uff1a\u7968\u9762\u4e58\u8f66\u7ad9\u5f00\u8f66\u65f6\u95f4\u524d\u0034\u0038\u5c0f\u65f6\u4ee5\u4e0a\u7684\u6309\u7968\u4ef7\u0035\u0025\u8ba1\uff0c\u0032\u0034\u5c0f\u65f6\u4ee5\u4e0a\u3001\u4e0d\u8db3\u0034\u0038\u5c0f\u65f6\u7684\u6309\u7968\u4ef7\u0031\u0030\u0025\u8ba1\uff0c\u4e0d\u8db3\u0032\u0034\u5c0f\u65f6\u7684\u6309\u7968\u4ef7\u0032\u0030\u0025\u8ba1\u3002\u5e76\u6309\u7167\u6700\u4f4e\u0020\u0032\u5143\u002f\u5f20\u6536\u53d6\u9000\u7968\u8d39\u3002\u5982\u679c\u6539\u7b7e\u540e\u7684\u8f66\u7968\u4e58\u8f66\u65e5\u671f\u5728\u6625\u8fd0\u671f\u95f4\u7684\uff0c\u9000\u7968\u65f6\u6536\u53d6\u0032\u0030\u0025\u7684\u9000\u7968\u8d39\u3002\u6700\u7ec8\u9000\u6b3e\u4ee5\u94c1\u8def\u5c40\u5b9e\u9000\u4e3a\u51c6\u3002\u000d\u000a
+</string>
+    <string name="railway_student_rule_info">\u0031\u3001\u0020\u0020\u5b66\u751f\u7968\u8bf4\u660e\uff1a\u000d\u000a\uff08\u0031\uff09\u0020\u0020\u0020\u0020\u0020\u0043\u002f\u0044\u002f\u0047\uff1a\u53ea\u80fd\u8d2d\u4e70\u4e8c\u7b49\u5ea7\uff1b\u005a\u002f\u0054\u002f\u004b\u002f\u5176\u4ed6\u003a\u0020\u0020\u53ea\u80fd\u8d2d\u4e70\u786c\u5ea7\u3001\u786c\u5367\uff1b\u000d\u000a\uff08\u0032\uff09\u0020\u0020\u0020\u0020\u0020\u5b66\u751f\u7968\u7531\u4e8e\u0031\u0032\u0033\u0030\u0036\u5404\u8f66\u6b21\u6298\u6263\u4ef7\u4e0d\u540c\uff0c\u7968\u4ef7\u9700\u4f9d\u636e\u0031\u0032\u0033\u0030\u0036\u6700\u7ec8\u51fa\u7968\u540e\u4e3a\u51c6\uff1b\u000d\u000a\uff08\u0033\uff09\u0020\u0020\u0020\u0020\u0020\u8d2d\u7968\u540e\u3001\u5f00\u8f66\u524d\uff0c\u987b\u529e\u7406\u6362\u7968\u624b\u7eed\u65b9\u53ef\u8fdb\u7ad9\u4e58\u8f66\u3002\u6362\u7968\u65f6\uff0c\u8bf7\u643a\u5e26\u4e58\u8f66\u4eba\u5b66\u751f\u8bc1\u548c\u8eab\u4efd\u8bc1\u539f\u4ef6\u6216\u5176\u4ed6\u76f8\u5173\u8bc1\u660e\u3002\u000d\u000a\uff08\u0034\uff09\u0020\u0020\u0020\u0020\u0020\u540c\u4e00\u8ba2\u5355\u91cc\u5b66\u751f\u8bc1\u4f18\u60e0\u533a\u95f4\u4fe1\u606f\u5fc5\u987b\u4fdd\u6301\u4e00\u81f4\u3002\u975e\u540c\u4e00\u4f18\u60e0\u533a\u95f4\u3001\u6210\u4eba\u7968\u4e0e\u5b66\u751f\u7968\uff0c\u90fd\u8bf7\u5206\u5f00\u4e0b\u5355\uff1b\u000d\u000a\u0032\u3001\u0020\u0020\u8d2d\u4e70\u5b66\u751f\u7968\u5e94\u540c\u65f6\u7b26\u5408\u4ee5\u4e0b\u6761\u4ef6\uff1a\u000d\u000a\uff08\u0031\uff09\u0020\u0020\u0020\u0020\u0020\u5b66\u751f\u7968\u4e58\u8f66\u65f6\u95f4\u9650\u4e3a\u6bcf\u5e74\u7684\u6691\u5047\u0036\u6708\u0031\u65e5\u81f3\u0039\u6708\u0033\u0030\u65e5\u3001\u5bd2\u5047\u0031\u0032\u6708\u0031\u65e5\u81f3\u0033\u6708\u0033\u0031\u65e5\u3002\u000d\u000a\uff08\u0032\uff09\u0020\u0020\u0020\u0020\u0020\u5728\u56fd\u5bb6\u6559\u80b2\u4e3b\u7ba1\u90e8\u95e8\u6279\u51c6\u6709\u5b66\u5386\u6559\u80b2\u8d44\u683c\u7684\u666e\u901a\u5927\u3001\u4e13\u9662\u6821\uff08\u542b\u6c11\u529e\u5927\u5b66\u3001\u519b\u4e8b\u9662\u6821\uff09\uff0c\u4e2d\u7b49\u4e13\u4e1a\u5b66\u6821\u3001\u6280\u5de5\u5b66\u6821\u548c\u4e2d\u3001\u5c0f\u5b66\u5c31\u8bfb\uff0c\u6ca1\u6709\u5de5\u8d44\u6536\u5165\u7684\u5b66\u751f\u3001\u7814\u7a76\u751f\u3002\u000d\u000a\uff08\u0033\uff09\u0020\u0020\u0020\u0020\u0020\u5bb6\u5ead\u5c45\u4f4f\u5730\uff08\u7236\u4eb2\u6216\u6bcd\u4eb2\u4e4b\u4e2d\u4efb\u4f55\u4e00\u65b9\u5c45\u4f4f\u5730\uff09\u548c\u5b66\u6821\u6240\u5728\u5730\u4e0d\u5728\u540c\u4e00\u57ce\u5e02\u3002\u000d\u000a\uff08\u0034\uff09\u0020\u0020\u0020\u0020\u0020\u5927\u4e2d\u4e13\u5b66\u751f\u51ed\u9644\u6709\u52a0\u76d6\u9662\u6821\u516c\u7ae0\u7684\u51cf\u4ef7\u4f18\u5f85\u51ed\u8bc1\u3001\u706b\u8f66\u7968\u7535\u5b50\u4f18\u60e0\u5361\u548c\u7ecf\u5b66\u6821\u6ce8\u518c\u7684\u5b66\u751f\u8bc1\uff0c\u65b0\u751f\u51ed\u5b66\u6821\u5f55\u53d6\u901a\u77e5\u4e66\uff0c\u6bd5\u4e1a\u751f\u51ed\u5b66\u6821\u4e66\u9762\u8bc1\u660e\uff1b\u5c0f\u5b66\u751f\u51ed\u5b66\u6821\u4e66\u9762\u8bc1\u660e\u3002\u000d\u000a\uff08\u0035\uff09\u0020\u0020\u0020\u0020\u0020\u5728\u4f18\u60e0\u4e58\u8f66\u533a\u95f4\u4e4b\u5185\uff0c\u4e14\u4f18\u60e0\u4e58\u8f66\u533a\u95f4\u9650\u4e8e\u5bb6\u5ead\u81f3\u9662\u6821\uff08\u5b9e\u4e60\u5730\u70b9\uff09\u4e4b\u95f4\u3002\u000d\u000a\uff08\u0036\uff09\u0020\u0020\u0020\u0020\u0020\u6bcf\u5e74\u4e58\u8f66\u6b21\u6570\u9650\u4e8e\u56db\u6b21\u5355\u7a0b\u3002\u5f53\u5e74\u672a\u4f7f\u7528\u7684\u6b21\u6570\uff0c\u4e0d\u80fd\u7559\u81f3\u4e0b\u5e74\u4f7f\u7528\u3002\u000d\u000a\u3000\u3000\u4e0b\u5217\u60c5\u51b5\u4e0d\u80fd\u53d1\u552e\u5b66\u751f\u7968\uff1a\u000d\u000a\u3000\u3000\uff08\u0031\uff09\u5b66\u6821\u6240\u5728\u5730\u6709\u5b66\u751f\u7236\u6216\u6bcd\u5176\u4e2d\u4e00\u65b9\u65f6\uff1b\u000d\u000a\u3000\u3000\uff08\u0032\uff09\u5b66\u751f\u56e0\u4f11\u5b66\u3001\u590d\u5b66\u3001\u8f6c\u5b66\u3001\u9000\u5b66\u65f6\uff1b\u000d\u000a\u3000\u3000\uff08\u0033\uff09\u5b66\u751f\u5f80\u8fd4\u4e8e\u5b66\u6821\u4e0e\u5b9e\u4e60\u5730\u70b9\u65f6\uff1b\u000d\u000a\u3000\u3000\uff08\u0034\uff09\u5b66\u751f\u8bc1\u672a\u6309\u65f6\u529e\u7406\u5b66\u6821\u6ce8\u518c\u7684\uff1b\u000d\u000a\u3000\u3000\uff08\u0035\uff09\u5b66\u751f\u8bc1\u4f18\u60e0\u4e58\u8f66\u533a\u95f4\u66f4\u6539\u4f46\u672a\u52a0\u76d6\u5b66\u6821\u516c\u7ae0\u7684\uff1b\u000d\u000a\u3000\u3000\uff08\u0036\uff09\u6ca1\u6709\u201c\u5b66\u751f\u706b\u8f66\u7968\u4f18\u60e0\u5361\u201d\u3001\u201c\u5b66\u751f\u706b\u8f66\u7968\u4f18\u60e0\u5361\u201d\u4e0d\u80fd\u8bc6\u522b\u6216\u8005\u4e0e\u5b66\u751f\u8bc1\u8bb0\u8f7d\u4e0d\u4e00\u81f4\u7684\u3002\u000d\u000a\u3000\u3000\uff08\u0037\uff09\u5b66\u751f\u7968\u65f6\u5e94\u4ee5\u8fd1\u5f84\u8def\u6216\u6362\u4e58\u6b21\u6570\u5c11\u7684\u5217\u8f66\u53d1\u552e\u3002\u000d\u000a</string>
+    <string name="railway_order_booking_success_next">确定</string>
+    <string name="book_now">立即预订</string>
+    <string name="railway_order_booking_success_link_tohotel">查看酒店</string>
+    <string name="railway_order_booking_success_recommend_tohotel">为您推荐酒店</string>
+    <string name="railway_order_pay_titile">支付结果？</string>
+    <string name="railway_order_pay_ok">支付完成</string>
+    <string name="railway_order_pay_cancel">再次支付</string>
+    <string name="railway_order_pay_retry">重试</string>
+    <string name="railway_order_pay_dismiss">取消</string>
+    <string name="railway_order_pay_fail">支付失败！</string>
+
+    <!-- railway 12306 -->
+    <string name="railway_use_12306_login">使用12306账号预定</string>
+    <string name="railway_12306_order_fillin">填写订单</string>
+    <string name="railway_12306_login_title">12306账号登录</string>
+    <string name="railway_12306_login_account">账号</string>
+    <string name="railway_12306_login_pwd">密码</string>
+    <string name="railway_12306_login_randomcode">验证码</string>
+    <string name="railway_12306_login">登录</string>
+    <string name="railway_12306_login_elong">使用艺龙账号登陆</string>
+    <string name="railway_12306_cancel_order">取消订单</string>
+    <string name="railway_12306_colse_order">关闭</string>
+    <string name="railway_12306_order_canceling">订单取消中。。。。。。</string>
+
+    <!-- 账户明细页 -->
+    <string name="myelong_account_list_nodata">亲，你还没有消费记录~</string>
+    <!-- 现金明细页 -->
+    <string name="no_cash_mingxi_record">亲，你还没有消费记录~</string>
+    <string name="personal_center_my_cash_mingxi_title">收支明细</string>
+
+    <!-- groupon -->
+    <string name="sort_default">默认排序</string>
+    <string name="sort_price">价格升序</string>
+    <string name="sort_price_desc">价格降序</string>
+    <string name="sort_star">星级升序</string>
+    <string name="sort_star_desc">星级降序</string>
+    <string name="privilege_desc">优惠降序</string>
+    <string name="sort_distance_undesc">由近及远</string>
+    <string name="sort_comment">好评降序</string>
+    <string name="sort_sale_num">销量升序</string>
+    <string name="sort_sale_num_desc">销量降序</string>
+    <string name="sort_distance">距离升序</string>
+    <string name="groupon_ordertotalcount">订单金额：</string>
+    <string name="groupon_ordersucceed_orderbyphone">电话预约</string>
+    <string name="groupon_sharetoothers">帮别人订，转发订单</string>
+    <string name="groupon">团购</string>
+    <string name="groupon_hotel">酒店团购</string>
+    <string name="groupon_filter_noresult">没有符合条件的%1$s信息</string>
+    <string name="groupon_no_results">该城市目前没有团购</string>
+    <string name="field_groupon_city">团购城市:</string>
+    <string name="groupon_city">团购城市</string>
+    <string name="groupon_default_city">北京</string>
+    <string name="original_price">原价</string>
+    <string name="saved_cost">节省</string>
+    <string name="booking">预约</string>
+    <string name="booking_ask">预约咨询</string>
+    <string name="discount_title">折扣</string>
+    <string name="groupon_sold">%1$d人已购买</string>
+    <string name="groupon_sold_pattern">%1$d人</string>
+    <string name="groupon_sold_suffix">已购买</string>
+    <string name="show_more">更多酒店</string>
+    <string name="loading_more">加载更多</string>
+    <string name="my_fav_list">我的收藏</string>
+    <string name="my_fav_order_list">我的订单</string>
+    <string name="show_more_groupon">显示更多</string>
+    <string name="groupon_hotel_list">团购酒店列表</string>
+    <string name="groupon_city_pattern">%1$s（%2$d）</string>
+    <string name="groupon_count_pattern">（%1$d）</string>
+    <string name="groupon_details">详情</string>
+    <string name="hotel_intro">简介</string>
+    <string name="groupon_remain_time">剩余时间:</string>
+    <string name="groupon_remain_time_pattern">剩余时间：%1$d天%2$d小时%3$d分钟%4$d秒</string>
+    <string name="groupon_book">抢购</string>
+    <string name="groupon_userguide">1. 预约时需提供艺龙团购券券号及密码；预约成功后，艺龙团购券视为已使用，不得进行变更和取消；预约是否成功以商家的最终确认为准；由于商家单日接待能力有限，建议您尽可能更早提前预约。\n\n2. 成功购买艺龙团购券后，不退不换，不设找赎，不可兑换现金，过期作废，不可顺延；如团购未成功，则艺龙会将款项退还至您支付时使用的信用卡账户中，由于各信用卡开户行不同退款时间大约需要2-15个工作日。\n\n3. 艺龙团购券购买数量不设限(酒店声明的特殊情况除外)。除非特别说明，可以在一家酒店连续使用多张团购券。请注意在预约时向酒店说明。\n\n4. 此价格不可与其他折扣或促销项目同时享用。\n\n5. 每间客房最多入住2位宾客，每位入住宾客需携带有效身份证件方可办理入住登记。\n\n6. 艺龙团购券未包含得其他项目，如酒店餐饮、娱乐、酒水、加床、通讯及政府税金等其他费用需由入住人另行支付。\n\n7.团购券号和密码如果忘记，可以在 “订单管理”中“团购订单”进行查询获取。 \n\n8. 在法律允许的范围内，根据活动的进展情况艺龙旅行网可能对活动的规则/条款作出适当修改/调整。</string>
+    <string name="groupon_book_tip">温馨提示</string>
+    <string name="groupon_emptyemail_warning">购买数量超过1，您必须填写电子邮箱</string>
+    <string name="pricecalc_pattern">(￥%1$d x %2$d)</string>
+    <string name="pricecalc_pattern_withfee">(￥%1$dx%2$d+￥%3$d快递费)</string>
+    <string name="field_buyer">订\u0020\u0020购\u0020\u0020人：</string>
+    <string name="field_expressfee">邮寄费用：</string>
+    <string name="groupon_creditcard_info">信用卡信息</string>
+    <string name="invoice_info">发票信息</string>
+    <string name="groupon_bookingsuccess_note">我们已经把团购券和密码发至您的手机和邮箱，请您凭券和密码去商家消费。</string>
+    <string name="field_totalcost">消费金额:</string>
+    <string name="field_cashcost">现金账户支付:</string>
+    <string name="ordersuccess_coupontip">恭喜，您已经获得返现￥%1$s，入住并签到后立即到账</string>
+    <string name="ordersuccess_couponsimpletip">您已经获得￥%1$s返现</string>
+    <string name="field_creditcardcost">信用卡支付:</string>
+    <string name="field_totalcost2">消费金额:</string>
+    <string name="field_groupon_content">团购内容包括：</string>
+    <string name="field_paystatus">支付状态：</string>
+    <string name="view_grouponquan">查看团购券</string>
+    <string name="groupon_order">团购订单</string>
+    <string name="field_quan_id">券\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020号：</string>
+    <string name="field_status">状\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020态：</string>
+    <string name="field_starttime">开始时间：</string>
+    <string name="field_endtime">过期时间：</string>
+    <string name="no_grouponquan_warning">该订单没有团购券</string>
+    <string name="groupon_quan">\u0020\u0020订单详情</string>
+    <string name="groupon_quan_cancel_confirm">您确定要取消该团购券吗?</string>
+    <string name="groupon_quans_cancel_confirm">您确定要取消全部团购券吗?</string>
+    <string name="groupon_tips">团购提示</string>
+    <string name="num">数量</string>
+    <string name="multiplication">x</string>
+    <string name="unitprice">单价</string>
+    <string name="field_unitprice">单\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020价：</string>
+    <string name="field_bookingnum">购买数量：</string>
+    <string name="total">总价</string>
+    <string name="global_total">总\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020价：</string>
+    <string name="cancel_rule">取消政策：</string>
+    <string name="field_totalprice">总\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020价：</string>
+    <string name="equal">=</string>
+    <string name="invoice">需要发票</string>
+    <string name="repairinvoice">补开发票</string>
+    <string name="updateinvoice">修改发票</string>
+    <string name="invoice_byhotel">此发票由酒店提供，如有需要请向酒店前台索取。</string>
+    <string name="invoice_head">抬头</string>
+    <string name="invoice_head_repair">发票抬头</string>
+    <string name="invoice_head_hint">输入发票抬头\u0020</string>
+    <string name="need_invoice">需要发票</string>
+    <string name="need_invoice2">\u0020\u0020需要发票</string>
+    <string name="field_need_invoice">需要发票：</string>
+    <string name="invoice_title">发票抬头</string>
+    <string name="field_invoice_title">发票抬头：</string>
+    <string name="field_invoice_type">发票类型：</string>
+    <string name="field_invoice_type_repair">发票类型</string>
+    <string name="field_invoice_phone">收件人电话</string>
+    <string name="invoice_phone_toast">收件人电话仅支持大陆手机号，请填写以1开头的11位手机号码。</string>
+    <string name="invoice_phone_hint">仅支持大陆手机号\u0020</string>
+    <string name="invoice_type">发票类型</string>
+    <string name="confirm_and_pay">\u0020\u0020确认并支付</string>
+    <string name="groupon_note">购买成功后将把团购券和密码发至您的手机,凭券和密码去商家消费。</string>
+    <string name="groupon_invoice_note">发票将由艺龙公司开具,需要10元配送费。</string>
+    <string name="groupon_invoice_note2">本产品发票由预约商家提供，请消费时向预约商家索取.</string>
+    <string name="groupon_invoice_address">发票邮寄地址</string>
+    <string name="field_invoice_address">发票邮寄地址：</string>
+    <string name="payed">已支付</string>
+    <string name="unpay">未支付</string>
+    <string name="groupon_info">团购信息</string>
+    <string name="invoice_fillin">发票填写</string>
+    <string name="field_buy_product">所购项目:</string>
+    <string name="field_buy_hotelname">酒店名称:</string>
+    <string name="fight_order_point">本次预订所获积分:</string>
+    <string name="groupon_coupon_message_sent">发送成功 </string>
+    <string name="groupon_coupon_refund_success">退券成功 </string>
+    <string name="groupon_coupon_message_success">确定</string>
+    <string name="groupon_coupon_message_confirm">发送短信 </string>
+    <string name="groupon_area_filter">区域 </string>
+    <string name="groupon_filter_map">显示地图 </string>
+    <string name="groupon_filter_map_tips">抱歉，周边没有更多的酒店了</string>
+    <string name="hotel_comment">酒店点评</string>
+    <string name="group_on_comment">团购点评</string>
+    <string name="hotel_comment_tip">点评得￥100消费券</string>
+    <string name="go_to_comment">去点评</string>
+    <string name="myelong_settings_tip">常用入住人/信用卡/地址</string>
+    <string name="hotel_list_comment">%1$d%%好评</string>
+    <string name="hotel_rate">好评</string>
+    <string name="hotel_recommand_good">好评</string>
+    <string name="hotel_recommand_bad">差评</string>
+    <string name="hotel_list_comment2">%1$s分</string>
+    <string name="percent">%1$d%%</string>
+    <string name="total_comment">%1$d条点评</string>
+    <string name="groupon_total_comment">查看点评</string>
+    <string name="sold_total_count">人已购买</string>
+    <string name="guest_good_comments">好评</string>
+    <string name="no_commentablehotels_warning">您没有可点评的酒店</string>
+    <string name="depart_station_list">出发车站</string>
+    <string name="arrive_station_list">到达车站</string>
+    <string name="comment_content">评论内容</string>
+    <string name="hotel_gift">艺龙赠礼</string>
+    <string name="hotelcomment_publish_inputhint">分享一下您的入住体验...</string>
+    <string name="hotelcomment_publish_inputhint_empty">请输入评论内容</string>
+    <string name="hotelcomment_publish_success">评论成功</string>
+    <string name="min_length_warning">%2$s不能少于%1$d个字符</string>
+    <string name="empty">无</string>
+    <string name="recommendoption_good">推荐</string>
+    <string name="recommendoption_bad">不推荐</string>
+    <string name="loadingDynamicTips0">艺龙无线的酒店数量是30000多家,全国第一,出门订酒店必备喔!</string>
+    <string name="loadingDynamicTips1">预订酒店使用消费券,最多可以获得20%的现金返还,多订多返!</string>
+    <string name="loadingDynamicTips2">进入活动公告可以参加抽平板电脑大奖活动喔,每月一台!</string>
+    <string name="loadingDynamicTips3">预订酒店使用消费券,最多可以获得20%的现金返还,多订多返!</string>
+    <string name="loadingDynamicTips4">试试"今日特价"酒店吧,每天下午4点后更多酒店打折销售!</string>
+    <string name="loadingDynamicTips5">艺龙无线的酒店数量是30000多家,全国第一,出门订酒店必备喔!</string>
+    <string name="loadingDynamicTips6">预订酒店使用消费券,最多可以获得20%的现金返还,多订多返!</string>
+    <string name="loadingDynamicTips7">进入活动公告可以参加抽平板电脑大奖活动喔,每月一台!</string>
+    <string name="loadingDynamicTips8">预订酒店使用消费券,最多可以获得20%的现金返还,多订多返!</string>
+    <string name="loadingDynamicTips9">试试"今日特价"酒店吧,每天下午4点后更多酒店打折销售!</string>
+    <string name="loadingDynamicTips10">努力加载中,请稍候...</string>
+    <string name="downloading_app">应用程序包正在下载中,请稍候...</string>
+    <string name="groupon_detail_loading_tips">酒店详细信息努力加载中...</string>
+    <string name="groupon_detail_comment_loading_tips">酒店评论努力加载中...</string>
+    <string name="groupon_detail_no_results_tip">网络不给力请重试...</string>
+    <!-- global -->
+    <string name="select_customer_and_room">选择房间&amp;入住人</string>
+    <string name="global_hotel_detail_select_customers_adult_amount">成人数量</string>
+    <string name="global_hotel_detail_select_customers_child_amount">儿童数量</string>
+    <string name="global_hotel_detail_select_customers_child_age">儿童年龄</string>
+    <string name="global_hotel_detail_select_room_titile0">房间1</string>
+    <string name="global_hotel_detail_select_room_titile1">房间2</string>
+    <string name="global_hotel_detail_select_room_titile2">房间3</string>
+    <string name="global_hotel_detail_select_room_titile3">房间4</string>
+    <string name="global_hotel_detail_select_room_titile4">房间5</string>
+    <string name="global_hotel_detail_select_room_titile5">房间6</string>
+    <string name="global_hotel_detail_select_room_titile6">房间7</string>
+    <string name="global_hotel_detail_select_room_titile7">房间8</string>
+    <string name="adults_amount"> %1$d人 </string>
+    <string name="rooms_amount"> %1$d间 </string>
+    <string name="global_rooms_amount">间 </string>
+    <string name="child_age"> %1$s岁 </string>
+    <string name="room_people_is_null">请选择房间入住人数量</string>
+    <string name="child_age_is_null">请选择房间儿童年龄</string>
+    <string name="room_adults_amount">(%1$d成人 </string>
+    <string name="room_child_amount">%1$d儿童) </string>
+    <string name="room_child_age_is_unknown">\?岁 </string>
+    <string name="submit_global_order">信用卡支付</string>
+    <string name="global_phone_number">手机</string>
+    <string name="global_hotel_order_cancel">限时取消</string>
+    <string name="global_hotel_order_not_cancel">不可取消</string>
+    <string name="global_hotel_tax_and_service_charge">税&amp;服务费:</string>
+    <string name="global_hotel_room_price">房费:</string>
+    <string name="global_hotel_room_totalprice">总价:</string>
+    <string name="global_order_room_totalprice_savemoney_tips">(已节省</string>
+    <string name="global_order_room_totalprice_savemoney">元)</string>
+    <string name="global_order_room_policy">取消政策</string>
+    <string name="global_hotel_order_checkin_tab">入住</string>
+    <string name="global_hotel_order_checkout_tab">离店</string>
+    <string name="global_order_needinvoice_tips">提供电子发票（可报销），预订成功后发送至电子邮箱</string>
+    <string name="global_order_needinvoice_hint">请输入发票抬头</string>
+    <string name="global_order_mobilephone_hint">用于接收确认短信</string>
+    <string name="global_order_email_hint">用于接收预订确认函及电子发票</string>
+    <string name="global_order_customer_contactemail_hint">用于短信确认，客服</string>
+    <string name="contactemail">邮箱</string>
+    <string name="global_hotel_bookingtimes_tips">国际酒店预订显示日期均为当地日期  </string>
+    <string name="global_hotel_specialneed">其他偏好</string>
+    <string name="global_hotel_traveller_name_tips">1间房只需填写1位入住人，请保证入住人姓名与入住时证件一致 </string>
+    <string name="global_hotel_roomnum_title1">房间1入住人</string>
+    <string name="global_hotel_roomnum_title2">房间2入住人</string>
+    <string name="global_hotel_roomnum_title3">房间3入住人</string>
+    <string name="global_hotel_roomnum_title4">房间4入住人</string>
+    <string name="global_hotel_roomnum_title5">房间5入住人</string>
+    <string name="global_hotel_roomnum_title6">房间6入住人</string>
+    <string name="global_hotel_roomnum_title7">房间7入住人</string>
+    <string name="global_hotel_roomnum_title8">房间8入住人</string>
+    <string name="global_hotel_room_customer_hint">拼音或者英文</string>
+    <string name="last_name">姓</string>
+    <string name="first_name">名</string>
+    <string name="global_hotel_room_selectbed">选择床型</string>
+    <string name="global_hotel_order_phone_is_null">请您填写手机号码</string>
+    <string name="global_hotel_order_phone_is_error">您输入的手机号码有错误，请重新输入</string>
+    <string name="global_hotel_order_email_is_null">请您填写电子邮箱地址</string>
+    <string name="global_hotel_order_email_is_error">请正确填写电子邮箱地址</string>
+    <string name="global_hotel_specialneed_title">其他偏好</string>
+    <string name="glboal_hotel_invoice_name_isnull">请您填写发票抬头</string>
+    <string name="glboal_hotel_customer_name_isnull">请您填写入住人姓名</string>
+    <string name="glboal_hotel_customer_name_iserror">请使用英文或拼音输入入住人姓名</string>
+    <string name="global_hotel_room_days">晚</string>
+    <string name="global_hotel_room_localdate">(当地时间)</string>
+    <string name="global_hotel_room_cancel_policy">取消政策</string>
+    <string name="global_hotel_room_order_detail">价格详情</string>
+    <string name="global_hotel_room_customer">填写入住人</string>
+    <string name="global_hotel_room_customer_contact">联系方式</string>
+    <string name="global_hotel_search_date_tips">国际酒店预订显示日期均为当地日期,请您认真核对</string>
+    <string name="glboal_hotel_customer_name_issame">多间客房的入住客人姓名不能重复，请重新填写</string>
+    <string name="global_hotel_order_special_needs_hint">我们会将您的偏好转达给酒店，但不保证酒店一定可以满足(包括床型偏好)。</string>
+    <string name="global_order_room_price_detail">价格已包含税费，点击查看价格详情</string>
+    <string name="global_order_room_checkin_date">入住：%1$s</string>
+    <string name="global_order_room_checkout_date">离店：%1$s</string>
+    <string name="global_hotel_credit_pay_total_money">支付金额：</string>
+    <string name="global_hotel_order_need_invoice">\u0020\u0020发票</string>
+
+    <!-- 通用 -->
+    <string name="mon">一</string>
+    <string name="tue">二</string>
+    <string name="wed">三</string>
+    <string name="thu">四</string>
+    <string name="fri">五</string>
+    <string name="sat">六</string>
+    <string name="sun">日</string>
+
+    <string-array name="hotel_detail_map_nearby">
+        <item>美食</item>
+        <item>景点</item>
+        <item>娱乐</item>
+        <item>机场车站</item>
+    </string-array>
+    <string-array name="hotel_detail_map_nearby_transport">
+        <item>机场</item>
+        <item>火车站</item>
+        <item>长途汽车站</item>
+    </string-array>
+    <string-array name="hotel_detail_map_star">
+        <item>无</item>
+        <item>★</item>
+        <item>★★</item>
+        <item>★★★</item>
+        <item>★★★★</item>
+        <item>★★★★★</item>
+    </string-array>
+    <string-array name="starlevel_text">
+        <item>星级不限</item>
+        <item>五星</item>
+        <item>四星</item>
+        <item>三星</item>
+        <item>三星以下</item>
+    </string-array>
+    <string-array name="groupon_search_sort_text">
+        <item>默认排序</item>
+        <item>价格从低到高</item>
+        <item>价格从高到低</item>
+        <item>销量从低到高</item>
+        <item>销量从高到低</item>
+    </string-array>
+    <string-array name="groupon_orderfilter_text">
+        <item>全部</item>
+        <item>未支付</item>
+        <item>已支付</item>
+        <item>已取消</item>
+    </string-array>
+    <string-array name="hotel_orderfilter_text">
+        <item>全部</item>
+        <item>入住</item>
+        <item>确认</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="flight_orderfilter_text">
+        <item>全部</item>
+        <item>确认</item>
+        <item>出票</item>
+        <item>退票</item>
+    </string-array>
+    <string-array name="starlevel_image">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>0</item>
+    </string-array>
+   
+
+
+</resources>

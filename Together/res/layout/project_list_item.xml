@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/project_list_bg_color"
+    android:padding="5dp">
+    
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+      <ImageView 
+          android:layout_width="60dp"
+          android:layout_height="60dp"
+          android:src="@drawable/my_name"
+          android:scaleType="fitXY"
+          android:id="@+id/project_photo_id"/>
+      
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="北斗天使"
+          android:textColor="@color/black"
+          android:textSize="22sp"
+          android:textStyle="bold"
+          android:layout_toRightOf="@id/project_photo_id"
+          android:layout_marginLeft="5dp"
+          android:layout_alignParentTop="true"
+          android:id="@+id/project_name_id"/>
+        
+      
+      <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="电子商务"
+          android:textSize="18sp"
+          android:layout_toRightOf="@id/project_photo_id"
+          android:layout_below="@id/project_name_id"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:textColor="@color/project_list_item_redirect_color"
+          android:id="@+id/project_direct_id"/>
+      
+       
+         <TextView 
+          android:layout_width="50dp"
+          android:layout_height="30dp"
+          android:text="盈利"
+          android:background="@drawable/income_bg"
+          android:gravity="center"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentRight="true"
+          android:textColor="@color/white"
+          android:textSize="14sp"
+          android:id="@+id/project_income_id"/>
+         
+         <TextView 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/project_list_item_redirect_color"
+          android:textSize="16sp"
+          android:layout_toRightOf="@id/project_photo_id"
+          android:layout_below="@id/project_direct_id"
+          android:layout_marginLeft="5dp"
+          android:layout_marginTop="5dp"
+          android:gravity="left"
+          android:maxLines="3"
+          android:ellipsize="end"
+          android:id="@+id/project_desc_id"/>
+         
+         <ProgressBar
+			style="?android:attr/progressBarStyleHorizontal" 
+			android:layout_width="fill_parent" 
+			android:layout_height="10dp"
+			android:layout_below="@id/project_desc_id"
+			android:layout_marginRight="10dp"
+			android:layout_marginBottom="5dp"
+			android:layout_marginTop="5dp"
+			android:progressDrawable="@drawable/project_proress_style"
+			android:id="@+id/project_fininace_id"/>
+         
+    
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="已经融资50w"
+    	    android:textColor="@color/project_list_item_fininace_color"
+    	    android:textSize="14sp"
+    	    android:layout_marginTop="5dp"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_below="@id/project_fininace_id"
+    	    android:id="@+id/project_fininace_desc_id"/>
+    	
+    	<TextView 
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:text="剩余30天"
+    	    android:gravity="center"
+    	    android:textColor="@color/project_list_item_fininace_color"
+    	    android:textSize="14sp"
+    	    android:layout_marginTop="5dp"
+    	    android:layout_marginRight="10dp"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_below="@id/project_fininace_id"
+    	    android:id="@+id/project_overplus_time_id"/>
+    	    
+    </RelativeLayout>
+    
+    <!-- 底部状态信息 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/gray_white"
+        android:padding="10dp"
+        android:gravity="center_vertical">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="团队"
+            android:textSize="14sp"
+            android:textColor="@color/project_list_item_status_color"/>
+        
+       <RatingBar 
+         android:id="@+id/ratingBar"
+	     android:layout_height="wrap_content"
+	     android:layout_width="wrap_content"
+	     android:isIndicator="true"
+		 style="?android:attr/ratingBarStyleSmall"
+	     android:rating="3.5"
+	     android:numStars="5"
+	     android:stepSize="0.5"/>
+       
+      <LinearLayout 
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="horizontal"
+          android:gravity="right"> 
+          
+        <ImageView
+           style="@style/project_status_image"
+           android:src="@drawable/chat_flag"/>   
+       <TextView
+           android:id="@+id/chat_info_id"
+           style="@style/project_status_text"
+           android:text="100"
+           android:textColor="@color/project_list_item_status_color"
+           android:layout_marginRight="10dp"/>
+       
+       <ImageView
+           style="@style/project_status_image"
+           android:src="@drawable/attention_flag"/>  
+        <TextView
+           android:id="@+id/attention_info_id"
+           style="@style/project_status_text"
+           android:text="100"
+           android:textColor="@color/project_list_item_status_color"
+           android:layout_marginRight="10dp"/>
+        
+        <ImageView
+           style="@style/project_status_image"
+           android:src="@drawable/collection_flag"/>  
+         <TextView
+           android:id="@+id/collection_info_id"
+           style="@style/project_status_text"
+           android:text="100"
+           android:textColor="@color/project_list_item_status_color"
+           android:layout_marginRight="10dp"/>
+         
+          <ImageView
+           style="@style/project_status_image"
+           android:src="@drawable/time_flag"/>  
+          <TextView
+           android:id="@+id/time_info_id"
+           style="@style/project_status_text"
+           android:text="2014-09-09"
+           android:textColor="@color/project_list_item_status_color"/>
+       </LinearLayout> 
+    </LinearLayout>
+</LinearLayout>
+    

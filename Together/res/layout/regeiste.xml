@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:gravity="center" >
+
+                <ImageView
+                    android:id="@+id/login_back_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/back_bg"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/logo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/login_name_edit_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_blueline"
+                    android:drawableLeft="@drawable/login_username_edit_finished_not"
+                    android:gravity="center_vertical"
+                    android:hint="张三"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_white"
+                    android:textSize="@dimen/common_nomal_large_text" />
+
+                <EditText
+                    android:id="@+id/login_phone_edit_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_blueline"
+                    android:drawableLeft="@drawable/login_phone_edit_finished_not"
+                    android:gravity="center_vertical"
+                    android:hint="手机号"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/gray_white"
+                    android:textSize="@dimen/common_nomal_large_text" />
+
+                <!-- 验证码 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/login_validate_edit_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_blueline"
+                        android:drawableLeft="@drawable/login_validate_edit_finished_not"
+                        android:hint="请输入验证码"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="34dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray_white" />
+
+                    <TextView
+                        android:id="@+id/login_validate_editext_get_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/myborder"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="获取验证码"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!-- 密码 -->
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <EditText
+                        android:id="@+id/login_passwrod_edit_id"
+                        android:layout_width="fill_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_blueline"
+                        android:drawableLeft="@drawable/login_password_edit_finished_not"
+                        android:hint="密码(6-12位)"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="34dp"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/gray_white" />
+
+                    <ImageView
+                        android:id="@+id/login_passwrod_edit_icea_id"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="5dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/login_icea_show"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!-- 角色选择 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/common_text_white"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="请选择你的角色" />
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/regeist_user_role_id"
+                        android:paddingLeft="10dp" >
+
+                        <RadioButton
+                            android:id="@+id/login_role_select_creater_id"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="发起人需要找投资人和合伙人"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/login_role_select_partener_id"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="合伙人需要找投资人和发起人"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/login_role_select_investor_id"
+                            style="@style/CustomCheckboxTheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="投资人需要找优秀项目和团队"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <!--
+               <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/test_edit"
+                android:drawableLeft="@drawable/login_password_edit_finished"
+                android:hint="测试"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColorHint="@color/gray_white"
+                android:paddingRight="34dp"
+                android:textColor="@color/white"
+                android:drawableRight="@drawable/login_icea_show"/>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/loginregeiste_user_id"
+                    android:layout_width="240dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/loginpage_btn_bg"
+                    android:gravity="center"
+                    android:text="注册并登录"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    
+  <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="50dp"
+       android:background="@color/black"
+       android:gravity="center_vertical">
+      
+      <TextView 
+          android:text="教育经历"
+          style="@style/common_text_whitebold"
+          android:textSize="20sp"
+          android:layout_centerInParent="true"/>
+      
+      <TextView 
+          android:id="@+id/user_edit_commit_id"
+          android:text="完成"
+          android:clickable="true"
+          style="@style/common_text_whitebold"
+          android:textSize="20sp"
+          android:layout_alignParentRight="true"
+          android:layout_centerVertical="true"
+          android:layout_marginRight="10dp"/>
+  </RelativeLayout>
+    
+ <ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:scrollbars="none">
+
+ <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+         <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_input_bg"
+                android:orientation="vertical">
+                
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider"/>
+
+             <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="学校名称"/>
+
+                <EditText
+                    android:id="@+id/user_education_name_id"
+                    style="@style/user_info_init_value"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/black"/>
+             </LinearLayout>
+             
+              <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+                
+              <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="专业" />
+
+                <EditText
+                    android:id="@+id/user_education_marir_id"
+                    style="@style/user_info_init_value"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/black"/>
+             </LinearLayout>
+             
+               <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_divider" />
+               
+               <LinearLayout 
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:padding="10dp">
+                 <TextView
+                    style="@style/user_info_init_text"
+                    android:layout_weight="1"
+                    android:text="时间" />
+
+                <EditText
+                    android:id="@+id/user_education_time_id"
+                    style="@style/user_info_init_value"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:textColorHint="@color/black"/>
+             </LinearLayout>
+               
+        </LinearLayout>
+    </LinearLayout>
+	</ScrollView>
+</LinearLayout>	

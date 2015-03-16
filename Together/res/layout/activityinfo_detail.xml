@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <include layout="@layout/title_back_img_text_two" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activityinfo_detail_title_id"/>
+        
+    <ScrollView 
+        android:layout_below="@id/activityinfo_detail_title_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        android:scrollbars="none"
+        android:id="@+id/activity_detail_message_id">
+        
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">   
+        
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white"
+	        android:orientation="horizontal"
+	        android:gravity="left|center_vertical">
+	        
+	      <ImageView 
+	          android:layout_width="80dp"
+	          android:layout_height="80dp"
+	          android:layout_margin="10dp"
+	          android:src="@drawable/my_name"
+	          android:scaleType="fitXY"
+	          android:id="@+id/activityinfo_detail_photo_id"/>
+	      
+	      <TextView 
+	          android:id="@+id/activityinfo_detail_name_id"
+	          android:text="创业速配第三季"
+	          style="@style/common_text_title_black"
+	          android:textSize="22sp"
+	          android:textStyle="bold"/>
+	        
+	         <TextView 
+	          style="@style/common_text_title_black"
+	          android:textSize="16sp"
+	          android:gravity="center"
+	          android:text="已结束"
+	          android:background="@color/gray"
+	          android:id="@+id/activityinfo_detail_status_id"/>
+	      </LinearLayout>  
+         
+	  <!--项目描述 -->  
+	    <TextView 
+	        style="@style/common_text_title_black"
+	        android:text="项目描述:"
+	        android:textStyle="bold"
+	        android:textSize="18sp"/>
+	    
+         <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/common_text_bold_black_mid_text"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:text="主办方:"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/activityinfo_detail_chief_id"
+                style="@style/common_text_bold_black_mid_value"
+                android:text="爱合伙"
+                android:gravity="center" />
+        </LinearLayout>
+      
+       <LinearLayout
+          android:layout_marginTop="5dp"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:gravity="left|center_vertical"
+          android:orientation="horizontal">
+          <TextView
+              style="@style/common_text_bold_black_mid_text"
+              android:textStyle="bold"
+              android:layout_marginRight="10dp"
+              android:text="开始时间:"
+              android:gravity="center" />
+          <TextView
+              android:id="@+id/activityinfo_detail_starttime_id"
+              style="@style/common_text_bold_black_mid_value"
+              android:text="2014.09.03.23 10:00"
+              android:gravity="center" />
+      </LinearLayout>
+      
+       <LinearLayout
+         android:layout_marginTop="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left|center_vertical"
+         android:orientation="horizontal">
+         <TextView
+             style="@style/common_text_bold_black_mid_text"
+             android:textStyle="bold"
+             android:layout_marginRight="10dp"
+             android:text="结束时间:"
+             android:gravity="center" />
+         <TextView
+             android:id="@+id/activityinfo_detail_endtime_id"
+             style="@style/common_text_bold_black_mid_value"
+             android:text="2014.09.03.23 18:00"
+             android:gravity="center" />
+     </LinearLayout>
+     
+       <LinearLayout
+         android:layout_marginTop="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left|center_vertical"
+         android:orientation="horizontal">
+         <TextView
+             style="@style/common_text_bold_black_mid_text"
+             android:textStyle="bold"
+             android:layout_marginRight="10dp"
+             android:text="互动地点:"
+             android:gravity="center"/>
+         <TextView
+             android:id="@+id/activityinfo_detail_address_id"
+             style="@style/common_text_bold_black_mid_value"
+             android:text="北京海淀区中关村知春路籽晶科技园B座河床大厦"
+             android:gravity="center" />
+     </LinearLayout>
+     
+        <LinearLayout
+         android:layout_marginTop="5dp"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:gravity="left|center_vertical"
+         android:orientation="horizontal">
+         <TextView
+             style="@style/common_text_bold_black_mid_text"
+             android:textStyle="bold"
+             android:layout_marginRight="10dp"
+             android:text="参与人数:"
+             android:gravity="center"/>
+         <TextView
+             android:id="@+id/activityinfo_detail_partnum_id"
+             style="@style/common_text_bold_black_mid_value"
+             android:text="100人"
+             android:gravity="center" />
+     </LinearLayout>
+    
+    <!-- 活动详情 -->
+     <TextView 
+	     style="@style/common_text_title_black"
+	     android:text="项目描述:"
+	     android:textStyle="bold"
+	     android:layout_marginTop="20dp"
+	     android:textSize="18sp"/>
+     
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <TextView 
+              android:id="@+id/activityinfo_detail_desc_id"
+              style="@style/common_text_bold_black_mid_value"
+              android:text="12月前，我们成了我国际最大的移动创业者联盟平台"/>
+      </LinearLayout>
+  </LinearLayout>
+ </ScrollView>	
+  
+  <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/activityinfo_detail_commit_id"
+        android:background="@color/common_green">
+        <TextView 
+            style="@style/common_text_whitebold"
+            android:text="我要参与"/>
+   </LinearLayout>
+         
+</RelativeLayout> 

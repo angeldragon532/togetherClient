@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    
+    <include layout="@layout/title_back_img_text_img_three" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/visitor_title_id"/>
+        
+    <ScrollView 
+        android:layout_below="@id/visitor_title_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:id="@+id/visitor_detail_message_id">
+        
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">   
+        
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">   
+        
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+        
+      <ImageView
+          android:id="@+id/visitor_detail_photo_id"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginRight="10dp"
+          android:layout_alignParentLeft="true"
+          android:background="@drawable/my_name"
+          android:scaleType="fitXY" />
+      
+      <TextView 
+          android:id="@+id/visitor_detail_name_id"
+          android:text="落月"
+          style="@style/common_text_title_black"
+          android:textSize="24sp"
+          android:textStyle="bold"
+          android:layout_alignParentTop="true"
+          android:layout_toRightOf="@id/visitor_detail_photo_id"/>
+        
+         <TextView 
+          android:text="天使汇"
+          style="@style/common_text_title_black"
+          android:textSize="18sp"
+          android:textStyle="bold"
+          android:layout_marginTop="5dp"
+          android:layout_toRightOf="@id/visitor_detail_photo_id"
+          android:layout_below="@id/visitor_detail_name_id"
+          android:id="@+id/visitor_detail_company_info_id"/>
+         
+         
+         <TextView 
+          style="@style/common_text_title_black"
+          android:textSize="14sp"
+          android:layout_marginTop="5dp"
+          android:maxLines="3"
+          android:ellipsize="end"
+          android:textColor="@color/common_desc_grey"
+          android:layout_toRightOf="@id/visitor_detail_photo_id"
+          android:layout_below="@id/visitor_detail_company_info_id"
+          android:text="毕业于哥伦比亚鸟鸡大学，隶属国家高级机关单位的一把手"
+          android:id="@+id/visitor_detail_chifedesc_id"/>
+         
+         <LinearLayout
+            android:layout_toRightOf="@id/visitor_detail_photo_id"
+            android:layout_below="@id/visitor_detail_chifedesc_id"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/project_status_image"
+                 android:layout_gravity="center_vertical"
+                android:src="@drawable/location_flag" />
+
+            <TextView
+                android:id="@+id/visitor_detail_city_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:text="北京"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/project_list_item_status_color" />
+            
+            <ImageView
+                style="@style/project_status_image"
+                 android:layout_gravity="center_vertical"
+                android:src="@drawable/chat_flag"/>
+
+            <TextView
+                android:id="@+id/visitor_detail_chat_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:text="140"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/project_list_item_status_color" />
+             
+            <ImageView
+                style="@style/project_status_image"
+                 android:layout_gravity="center_vertical"
+                android:src="@drawable/browse_flag" />
+
+            <TextView
+                android:id="@+id/visitor_detail_attation_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:text="70"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/project_list_item_status_color" />
+
+            <ImageView
+                style="@style/project_status_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/collection_flag" />
+
+            <TextView
+                android:id="@+id/visitor_detail_collection_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="134"
+                android:textColor="@color/project_list_item_status_color" />
+        </LinearLayout>
+    </RelativeLayout>     
+         
+     <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="2sp"
+        android:background="@drawable/list_divider"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+     
+     <!-- 投资项目 -->
+     <include layout="@layout/visitor_project_list"/>
+     
+     <!-- 投资理念 -->
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="left">
+          <TextView 
+              style="@style/common_text_title_black"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:text="投资理念: "/>
+          
+          <TextView 
+              android:id="@+id/visitor_detail_idea_id"
+              style="@style/common_text_title_black"
+              android:layout_marginTop="5dp"
+              android:textSize="14sp"
+              android:textColor="@color/common_desc_grey"
+              android:text="@string/visitor_idea"/>
+     </LinearLayout>
+    
+       <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/list_divider"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>   
+      
+       
+      <!-- 擅长领域 -->
+       <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="left">
+          <TextView 
+              style="@style/common_text_title_black"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:text="擅长领域: "/>
+          
+          <LinearLayout 
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal"
+             android:gravity="left"
+             android:paddingLeft="5dp">
+              <TextView 
+	              style="@style/common_text_white"
+	              android:textSize="18sp"
+	              android:background="@drawable/flag_riado_green"
+	              android:text="O2O"
+	              android:padding="3dp"
+	              android:layout_margin="3dp"/>
+              
+               <TextView 
+	              style="@style/common_text_white"
+	               android:textSize="18sp"
+	              android:background="@drawable/flag_riado_green"
+	              android:text="电子商务"
+	              android:padding="3dp"
+	              android:layout_margin="3dp"/>
+               
+                <TextView 
+	              style="@style/common_text_white"
+	               android:textSize="18sp"
+	              android:background="@drawable/flag_riado_green"
+	              android:text="移动互联网"
+	              android:padding="3dp"
+	              android:layout_margin="3dp"/>
+          </LinearLayout>
+     </LinearLayout>
+     
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/list_divider"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/> 
+    
+    <!-- 附加价值 -->
+      <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:gravity="left"
+         android:paddingLeft="5dp">
+          <TextView 
+              style="@style/common_text_title_black"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:text="附加价值: "/>
+          
+          <TextView 
+              android:id="@+id/visitor_detail_others_id"
+              style="@style/common_text_title_black"
+              android:layout_marginTop="5dp"
+              android:textSize="14sp"
+              android:textColor="@color/common_dark_gray"
+              android:text="@string/visitor_others"/>
+     </LinearLayout>
+     
+      <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/list_divider"
+		android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+      
+      <LinearLayout 
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="10dp">
+          
+          <TextView 
+              style="@style/common_text_title_black"
+              android:textSize="18sp"
+              android:textStyle="bold"
+              android:layout_weight="1"
+              android:text="粉丝(90人): "/>
+          
+          <ImageView 
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/visitor_detail_fensi_id"
+              android:src="@drawable/arrow_up"/>
+      </LinearLayout>
+	      
+	  	<com.beijing.together.activity.widget.MyHorizontalScrollView
+	        android:id="@+id/id_horizontalScrollView"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:background="@android:color/white"
+	        android:scrollbars="none"
+	        android:scrollbarStyle="insideInset">
+	        <LinearLayout
+	            android:id="@+id/id_gallery"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:orientation="horizontal" >
+	        </LinearLayout>
+	    </com.beijing.together.activity.widget.MyHorizontalScrollView> 
+	  </LinearLayout> 
+	 
+	  	  <!-- 提交项目 -->
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="3sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@drawable/button_bg_orange_img">
+        <TextView 
+            style="@style/common_text_whitebold"
+            android:text="提交项目"/>
+    </LinearLayout>
+  </LinearLayout>
+ </ScrollView>	
+  
+  
+         
+</RelativeLayout> 

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_hoar"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp">
+
+        <com.beijing.together.activity.widget.RoundImageView
+            android:id="@+id/activityinfo_photo_id"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/my_name"/>
+
+        <TextView
+            android:id="@+id/activityinfo_name_id"
+            style="@style/common_text_title_black"
+            android:layout_toRightOf="@id/activityinfo_photo_id"
+            android:text="创业速配第二季"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+        
+         <TextView
+                android:id="@+id/activityinfo_attented_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/attention_flag"
+                android:gravity="center_vertical"
+                android:text="100"
+                android:layout_alignTop="@id/activityinfo_photo_id"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/common_black"/>
+        
+		<LinearLayout 
+		    android:id="@+id/activityinfo_img_time_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_toRightOf="@id/activityinfo_photo_id"
+		    android:layout_below="@id/activityinfo_name_id">
+		    <ImageView 
+		        android:layout_height="20dp"
+		        android:layout_width="20dp"
+		        android:src="@drawable/chat_flag"/>
+		    <TextView 
+		        android:id="@+id/activityinfo_starttime_id"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="14sp"
+		        android:textColor="@color/common_black"
+		        android:text="2015.02.25 10:30"/>
+		</LinearLayout>
+		
+		<LinearLayout 
+		    android:id="@+id/activityinfo_img_address_id"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:gravity="left"
+		    android:layout_toRightOf="@id/activityinfo_photo_id"
+		    android:layout_below="@id/activityinfo_img_time_id">
+		    <ImageView 
+		        android:layout_height="20dp"
+		        android:layout_width="20dp"
+		        android:src="@drawable/collection_flag"/>
+		    <TextView 
+		        android:id="@+id/activityinfo_address_id"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textSize="16sp"
+		        android:textColor="@color/common_black"
+		        android:text="北京海淀区中关村知春路籽晶科技园B座河床大厦"/>
+		</LinearLayout>
+		
+   </RelativeLayout>
+
+    <!-- 底部状态信息 -->
+    <!--  <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="综合"
+            android:textColor="@color/project_list_item_status_color"
+            android:textSize="14sp" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <ImageView
+                style="@style/project_status_image"
+                 android:layout_gravity="center_vertical"
+                android:src="@drawable/attention_flag" />
+
+            <TextView
+                android:id="@+id/user_attented_value_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:text="100"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/project_list_item_status_color" />
+
+            <ImageView
+                style="@style/project_status_image"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/collection_flag" />
+
+            <TextView
+                android:id="@+id/user_collection_value_id"
+                style="@style/project_status_text"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:text="100"
+                android:textColor="@color/project_list_item_status_color" />
+            
+            <TextView 
+	              style="@style/common_text_white"
+	              android:padding="5dp"
+	              android:text="联系他"
+	              android:gravity="center"
+	              android:id="@+id/user_contact_others_id"
+	              android:background="@color/green"/>
+        </LinearLayout>
+    </LinearLayout>  -->
+
+</LinearLayout>
